@@ -2,12 +2,14 @@
 <html>
     <head>
         <title>Papa's Challenge</title>
+        <meta charset="UTF-8">
+        <meta name="author" content="Emma Wyman">
         <link rel="stylesheet" type="text/css" href="./css/style.css">
         <link rel="stylesheet" type="text/css" href="./css/normalize.css">
     </head>
     <body>
         <header>
-            <h1>Papas Fitness Challenge</h1>
+            <h1>Papa's Fitness Challenge</h1>
             <nav>
                 <ul>
                     <li><a href="#">Top</a></li>
@@ -16,25 +18,97 @@
                     <li><a href="#">My Progress</a></li>
                     <li><a href="#">My Competition</a></li>
                 </ul>
-                <div>
-                    <p>This section will talk about how this challenge came to exist and how it can help you reach your goals.</p>
-                </div>
             </nav>
         </header>
         <main>
-            <div>
-                <h2>Point System Guidlines</h2>
-                <p>Here the user can reference the guidelines for how points are calculated.</p>
+            <div class="about">
+                <h2>About the Challenge</h2>
+                <p>This section will talk about how this challenge came to exist and how it can help you reach your goals. Maybe it will even include a quote from some of the creators.</p>
             </div>
-            <div>
+ 
+            <div class="guidelines">
+                <h2>Point System Guidlines</h2>
+                <p>For each month your goal should be to get 50 points each day. There are four categories for earning points: workouts, steps, food and water, & sleep. Some days this might mean working out a little bit more, some days this might mean focusing on your water intake and eating right. Papa's Challenge was designed to keep you accountable while also being realistic and sustainable. 
+                    
+                </p>
+                    
+                <div class="workout-points">
+                    <h3>Workout Points</h3>
+                    <h4>You can get points for the following activities:</h4>
+                    
+                    <div class="workout-activities">
+                        <article>
+                            <h5>Stretching:</h5>
+                            <p>15 minutes of continuous stretching will earn you 5 points, and 30 min of stretching will earn you 15 points</p>
+                        </article>
+
+                        <article>
+                            <h5>If you do 50 push-ups, squats, or lunges: </h5>
+                            <p>You earn 5 points for each set (so 50 pushups, 50 squats, and 50 lunges done in one day will earn you 15 points, as will doing 150 squats in one day).</p>
+                        </article>
+
+                        <article>
+                            <h5>If you do 25 burpees, pullups, or dips: </h5>
+                            <p>You earn 5 points for each set, just like above.</p>
+                        </article>
+
+                        <article>
+                            <h5>If you do 100 jumping jacks: </h5>
+                            <p>You earn 5 points for each set.</p>
+                        </article>
+
+                        <article>
+                            <h5>If you do a plank for 150 seconds: </h5>
+                            <p>You earn 5 points.</p>
+                        </article>
+                    
+                        <article>
+                            <h5>If you do a 10-15 minute core or hip workout: </h5>
+                            <p>You earn 10 points for each workout (so 20 if you do both core and hip workout in one day)</p>
+                        </article>
+                    
+                        <article>
+                            <h5>If you attend a work out class, go to the gym, or go for a run: </h5>
+                            <p>
+                                <ul>
+                                    <li>Casual movement, light workout- 5 points</li>
+                                    <li>Starting to sweat, 30 min- 10 points</li>
+                                    <li>Medium, sweating, pretty challenging 30 min- 15 points</li>
+                                    <li>Medium to hard, sweating, pretty challenging for 60 min- 25 points</li>
+                                    <li>Hard, intense sweat, (you arent walking anywhere tomorrow) lasted 60min- 35 points</li>
+                                </ul>
+                            </p>
+                        </article>
+                    </div>
+                    
+                </div>
+
+                <div class="steps">
+                    <h2>Steps</h2>
+                    <p>For every 10,000 steps you get (within one day) you earn 10 points and you earn 5 points for every 5, 000 steps after the first 10,000. Also 50 flights of stairs earns you 5 points.</p>
+                </div>
+
+                <div class="food-water">
+                    <h2>Food and Water</h2>
+                </div>
+
+                <div class="sleep">
+                    <h2>Sleep</h2>
+                </div>        
+
+            </div>
+
+            <div class="enter-points">
                 <h2>Enter Points</h2>
                 <p>There will be an HTML form here.</p>
             </div>
-            <div>
+
+            <div class="my-progress">
                 <h2>My Progress</h2>
                 <p>I will try and use JavaScipt to show the users progress here.</p>
             </div>
-            <div>
+
+            <div class="my-competition">
                 <h2>My Competition</h2>
                 <p>I will try and show the cumulative points for the group the user is competing against.</p>
             </div>
