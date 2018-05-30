@@ -8,31 +8,37 @@
         <link rel="stylesheet" type="text/css" href="./css/normalize.css">
     </head>
     <body>
-        <header>
+        <header >
             <h1>Papa's Fitness Challenge</h1>
             <nav>
                 <ul>
-                    <li><a href="#">Top</a></li>
-                    <li><a href="#">Guidlines</a></li>
-                    <li><a href="#">Enter Points</a></li>
-                    <li><a href="#">My Progress</a></li>
-                    <li><a href="#">My Competition</a></li>
+                    <li><a href="#top">Top</a></li>
+                    <li><a href="#guidelines">Guidlines</a></li>
+                    <li><a href="#points">Enter Points</a></li>
+                    <li><a href="#progress">My Progress</a></li>
+                    <li><a href="#competition">My Competition</a></li>
                 </ul>
             </nav>
         </header>
         <main>
-            <div class="about">
+            <div id="top" class="about">
                 <h2>About the Challenge</h2>
                 <p>This section will talk about how this challenge came to exist and how it can help you reach your goals. Maybe it will even include a quote from some of the creators.</p>
             </div>
  
-            <div class="guidelines">
+            <div id="guidelines" class="guidelines">
                 <h2>Point System Guidlines</h2>
-                <p>For each month your goal should be to get 50 points each day. There are four categories for earning points: workouts, steps, food and water, & sleep. Some days this might mean working out a little bit more, some days this might mean focusing on your water intake and eating right. Papa's Challenge was designed to keep you accountable while also being realistic and sustainable. 
+                <p>For each month your goal should be to get 50 points each day. There are four categories for earning points: workouts, steps, food and water, & sleep. Some days this might mean working out a little bit more, some days this might mean focusing on your water intake and eating right. Papa's Challenge was designed to keep you accountable while also being realistic and sustainable.</p>
                     
-                </p>
-                    
-                <div class="workout-points">
+                <nav>
+                    <ul>
+                        <li><a href="#woclass">Workout Points</a></li>
+                        <li><a href="#steps">Steps</a></li>
+                        <li><a href="#food-water">Food and Water</a></li>
+                        <li><a href="#sleep">Sleep</a></li>
+                    </ul>
+                </nav>
+                    <div id="woclass" class="workout-points">
                     <h3>Workout Points</h3>
                     <h4>You can get points for the following activities:</h4>
                     
@@ -83,32 +89,102 @@
                     
                 </div>
 
-                <div class="steps">
+                <div id="steps" class="steps">
                     <h2>Steps</h2>
                     <p>For every 10,000 steps you get (within one day) you earn 10 points and you earn 5 points for every 5, 000 steps after the first 10,000. Also 50 flights of stairs earns you 5 points.</p>
                 </div>
 
-                <div class="food-water">
+                <div id="food-water" class="food-water">
                     <h2>Food and Water</h2>
+                    <p>
+                        <ul>
+                            <li>Veggies! You earn 10 points for every 3 servings of veggies you eat.</li>
+                            <li>Fruit! You earn 2 points for each fruit serving you eat.</li>
+                            <li>Clean Eating! Be your own judge, but this should include no soda, chips, cookies, sweets, alcohol.. cereal.. generally known food that ISN'T good for you. The harder you are on yourself the better you'll be. 10 points if you eat Clean!
+                            </li>
+                            <li> Water!	10 points for 100 oz. OR 1/2 your body weight in oz. This option is capped at 10 point (don't overdo it, you need to find your hydration sweet spot).</li>
+                       
+                        </ul>
+                    </p>
                 </div>
 
-                <div class="sleep">
+                <div id="sleep" class="sleep">
                     <h2>Sleep</h2>
                 </div>        
 
             </div>
 
-            <div class="enter-points">
+            <div id="points" class="enter-points">
                 <h2>Enter Points</h2>
-                <p>There will be an HTML form here.</p>
+                <form>
+                    <fieldset>
+                        <legend><h3>Today's Points</h3></legend>
+                        <div>
+                            <label for="name">Name: <input type="text" id="name" name="user_name"></label>
+                        </div>
+
+                        <div>
+                            <input type="checkbox" id="stretching" name="stretching" value="stretching">
+                            <label for="stretching">stretching</label>
+                        </div>
+
+                        <div>
+                            <input type="checkbox" id="squats" name="squats" value="squats">
+                            <label for="squats">squats</label>    
+
+                            <input type="checkbox" id="push-ups" name="push-ups" value="push-ups">
+                            <label for="push-ups">push-ups</label>
+
+                            <input type="checkbox" id="lunges" name="lunges" value="lunges">
+                            <label for="lunges">lunges</label>                        
+                          </div>
+
+                          <div>
+                            <input type="checkbox" id="burpees" name="burpees" value="burpees">
+                            <label for="burpees">burpees</label>    
+
+                            <input type="checkbox" id="pullups" name="pullups" value="pullups">
+                            <label for="pullups">pullups</label>
+
+                            <input type="checkbox" id="dips" name="dips" value="dips">
+                            <label for="dips">dips</label>       
+                          </div>
+
+                          <div>
+                            <input type="checkbox" id="jjacks" name="jjacks" value="jjacks">
+                            <label for="jjacks">jumping jacks</label>
+                          </div>
+
+                          <div>
+                            <input type="checkbox" id="plank" name="plank" value="plank">
+                            <label for="plank">plank</label>
+                          </div>
+
+                          <div>
+                            <input type="checkbox" id="core" name="core" value="core">
+                            <label for="core">core workout</label>
+                            <input type="checkbox" id="hips" name="hips" value="hip">
+                            <label for="hip">hip workout</label>
+                          </div>
+
+                          <div>
+                            <input type="checkbox" id="class" name="class" value="class">
+                            <label for="class">workout class</label>
+                            <input type="checkbox" id="gym" name="gym" value="gym">
+                            <label for="gym">use gym</label>
+                            <input type="checkbox" id="run" name="run" value="run">
+                            <label for="run">go for run or walk</label>
+                          </div>
+                    </fieldset>
+                </form>
             </div>
 
-            <div class="my-progress">
+            <div id="progress" class="my-progress">
                 <h2>My Progress</h2>
                 <p>I will try and use JavaScipt to show the users progress here.</p>
             </div>
 
-            <div class="my-competition">
+            <div id="competition" class="my-competition">
                 <h2>My Competition</h2>
                 <p>I will try and show the cumulative points for the group the user is competing against.</p>
             </div>
