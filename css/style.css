@@ -1,0 +1,88 @@
+/* Structure */
+
+body {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    background-color: aqua;
+}
+
+.container {
+    width: 80%;
+  margin: 0 auto;
+  padding: 0;
+}
+
+/* Header */
+
+header {
+width: 100%;
+position: fixed;
+top: 0;
+background-color: darkcyan;
+height: 55px;
+}
+
+.name {
+    display: inline;
+    float: left;
+    margin: 0;
+    position: relative;
+    top: 10px; 
+}
+
+.main-nav {
+    float: right;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    position: relative;
+    top: 10px;
+}
+.main-nav li {
+    display: inline;
+    float: right;
+    height: 100%;
+    padding: 5px;
+    margin: 0 5px;
+}
+
+
+/* Main */
+
+.about {
+    padding-top: 60px;
+    background-color: darkcyan;
+    height: 500px;
+}
+
+.workout-activ {
+    height: 650px;
+}
+
+article {
+    display: inline;
+    float: left;
+    width: 40%;
+    padding-right: 10%;
+}
+
+/*Points*/
+fieldset {
+    border: solid 3px;
+    border-radius: 0.3em;
+    border-color: azure;
+}
+
+.form {
+    padding: 5px 10px;
+}
+
+/* Footer */
+
+footer {
+    display: inline;
+    float: left;
+    background-color: darkcyan;
+    width: 100%;
+}
