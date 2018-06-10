@@ -5,6 +5,7 @@ body {
     padding: 0;
     width: 100%;
     background-color: #1a659e;
+    font-family: Arial, Helvetica, sans-serif;
 }
 
 .container {
@@ -32,7 +33,6 @@ height: 55px;
 .name {
     color: #f7c59f;
     font-family: Arial, Helvetica, sans-serif;
-    display: inline;
     float: left;
     margin: 0;
     position: relative;
@@ -46,15 +46,19 @@ height: 55px;
     padding: 0;
     position: relative;
     top: 10px;
+    list-style-type: none;
 }
 .main-nav li {
     color: #f7c59f;
     font-family: Arial, Helvetica, sans-serif;
-    display: inline;
     float: right;
     height: 100%;
     padding: 5px;
     margin: 0 5px;
+}
+
+.main-nav li a {
+    text-decoration: none;
 }
 
 
@@ -71,7 +75,6 @@ height: 55px;
 }
 
 article {
-    display: inline;
     float: left;
     width: 40%;
     padding-right: 10%;
@@ -91,10 +94,16 @@ fieldset {
 /* Footer */
 
 footer {
-    display: inline;
-    float: left;
-    background-color: darkcyan;
+    background-color: #004e89;
+    height: 40px;
     width: 100%;
+    position: relative;
+    bottom: 0;
+}
+
+.footer h6 {
+    margin: 0;
+    padding: 0;
 }
 
 /* Screen Size Adjustments
@@ -104,7 +113,7 @@ On screens that are larger than 769px will have content on 90% of the screen.
 @media(min-width: 1181px) {
 
     .container {
-        width: 90%
+        width: 90%;
         margin: 0 auto;
 
     }
