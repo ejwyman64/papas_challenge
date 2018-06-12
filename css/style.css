@@ -6,6 +6,7 @@ body {
     width: 100%;
     background-color: #1a659e;
     font-family: Arial, Helvetica, sans-serif;
+    color: #90caf9;
 }
 
 .container {
@@ -26,8 +27,38 @@ header {
 width: 100%;
 position: fixed;
 top: 0;
+z-index: 10;
 background-color: #ff6b35;
 height: 55px;
+}
+
+.greeting {
+    padding-top: 60px;
+    background-color: #004e89;
+    height: 500px;
+    text-align: center;
+}
+
+.greeting h1 {
+    position: relative;
+    top: 95px;
+    color: #f7c59f;
+    font-size: 100px;
+    margin: 0 auto;
+    width: 70%;
+    height: 30%;
+}
+
+.greeting h2 {
+    position: relative;
+    top: 100px;
+    color: #f7c59f;
+    background: #ff6b35;
+    border-radius: 5px;
+    margin: 0 auto;
+    width: 400px;
+    height: 30px;
+    padding: 10px;
 }
 
 .name {
@@ -65,9 +96,25 @@ height: 55px;
 /* Main */
 
 .about {
-    padding-top: 60px;
     background-color: #004e89;
     height: 500px;
+    padding: 40px;
+}
+
+.quote {
+    float: left;
+    width: 30%;
+    border: solid #1a659e 2px;
+    border-radius: 5px;
+    padding: 10px;
+    margin: 5px;
+}
+
+.quote h6 {
+    padding: 5px;
+    margin: 0;
+    float: right;
+    font-size: 1em;
 }
 
 .workout-activ {
