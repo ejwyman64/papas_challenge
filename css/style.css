@@ -103,7 +103,7 @@ height: 55px;
 
 .quote {
     float: left;
-    width: 30%;
+    width: 28%;
     border: solid #1a659e 2px;
     border-radius: 5px;
     padding: 10px;
@@ -154,27 +154,40 @@ footer {
 }
 
 /* Screen Size Adjustments
-On screens that are larger than 769px will have content on 90% of the screen.
+On screens that are larger than 769px will have content on 70% of the screen.
 */
 
-@media(min-width: 1181px) {
+@media(min-width: 1319px) {
 
     .container {
-        width: 90%;
+        width: 70%;
         margin: 0 auto;
 
     }
 
 }
 
-@media(max-width: 1180px) {
+/* responsive design for medium screens */
+@media(max-width: 1243px) {
 
     body {
         font-size: 1.5em;
     }
     .container {
-        width: 70%;
+        width: 90%;
         margin: 0 auto;
+    }
+
+    .greeting {
+        padding-top: 150px;
+    }
+    .greeting h1 {
+        width: 90%;
+        height: auto;
+    }
+    .greeting h2 {
+        width: 70%;
+        height: auto;
     }
 
     .about {
@@ -196,4 +209,94 @@ On screens that are larger than 769px will have content on 90% of the screen.
     article {
         width: 70%;
     }
+}
+
+/* Responsive design for small screens */
+@media(max-width: 980px) {
+    body {
+        font-size: 2em;
+    }
+
+    header {
+        height: 150px;
+        position: absolute;
+        top: 0;
+    }
+
+    .container {
+        width: 90%;
+    }
+
+    .greeting {
+        padding-top: 150px;
+    }
+    .greeting h1 {
+        width: 90%;
+        height: auto;
+    }
+    .greeting h2 {
+        width: 70%;
+        height: auto;
+    }
+
+    .about {
+        height: 1800px;
+    }
+    .quote {
+        width: 90%;
+    }
+
+    .workout-activ {
+        height: 1700px;
+    }
+    article {
+        float: none;
+    }
+
+    
+}
+
+@media(max-width: 975px) {
+
+    body {
+        font-size: 2em;
+    }
+
+    header {
+        height: 260px;
+        position: absolute;
+        top: 0;
+    }
+
+
+    .container {
+        width: 90%;
+    }
+
+    .greeting {
+        padding-top: 250px;
+    }
+    .greeting h1 {
+        width: 90%;
+        height: auto;
+    }
+    .greeting h2 {
+        width: 70%;
+        height: auto;
+    }
+
+    .about {
+        height: 2300px;
+    }
+    .quote {
+        width: 90%;
+    }
+
+    .workout-activ {
+        height: 2300px;
+    }
+    article {
+        float: none;
+    }
+
 }
