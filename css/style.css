@@ -1,8 +1,8 @@
-/* Structure */
+/* Structure */ 
 
-body {
-    margin: 0;
-    padding: 0;
+html, body {
+    margin: 0px;
+    padding: 0px;
     width: 100%;
     background-color: #1a659e;
     font-family: Arial, Helvetica, sans-serif;
@@ -12,16 +12,17 @@ body {
 .container {
     width: 80%;
   margin: 0 auto;
-  padding: 0;
+  padding: 0px;
 }
 
-/* Links */
+/* ------------------------------ Links --------------------------------*/
 
 a {
     color: #f7c59f;
+    text-decoration: none;
 }
 
-/* Header */
+/* -----------------------------Header------------------------------------ */
 
 header {
 width: 100%;
@@ -29,36 +30,8 @@ position: fixed;
 top: 0;
 z-index: 10;
 background-color: #ff6b35;
-height: 55px;
-}
-
-.greeting {
-    padding-top: 60px;
-    background-color: #004e89;
-    height: 500px;
-    text-align: center;
-}
-
-.greeting h1 {
-    position: relative;
-    top: 95px;
-    color: #f7c59f;
-    font-size: 100px;
-    margin: 0 auto;
-    width: 70%;
-    height: 30%;
-}
-
-.greeting h2 {
-    position: relative;
-    top: 100px;
-    color: #f7c59f;
-    background: #ff6b35;
-    border-radius: 5px;
-    margin: 0 auto;
-    width: 400px;
-    height: 30px;
-    padding: 10px;
+height: auto;
+padding-bottom: 20px;
 }
 
 .name {
@@ -79,6 +52,11 @@ height: 55px;
     top: 10px;
     list-style-type: none;
 }
+
+.main-nav ul {
+    display: inline;
+}
+
 .main-nav li {
     color: #f7c59f;
     font-family: Arial, Helvetica, sans-serif;
@@ -88,18 +66,50 @@ height: 55px;
     margin: 0 5px;
 }
 
-.main-nav li a {
-    text-decoration: none;
+/* ---------------------------------Greeting-------------------------- */
+
+.greeting {
+    padding-top: 60px;
+    background-color: #004e89;
+    background-image: url("../img/mwyman.jpg");
+    background-repeat: no-repeat;
+    background-position:center;
+    background-size: cover;
+    height: auto;
+    width: 100%;
+    margin: 0;
+    padding-top: 400px;
+    padding-bottom: 400px;
 }
 
+.greeting h1 {
+    color: #ff6b35;
+    font-size: 100px;
+    text-align: center;
+    margin: 40px auto;
+    width: 70%;
+    height: 30%;
+}
 
-/* Main */
+.greeting h2 {
+    color: #f7c59f;
+    text-align: center;
+    background: #ff6b35;
+    border-radius: 5px;
+    margin: 0 auto;
+    width: 400px;
+    height: 30px;
+    padding: 10px;
+}
+
+/* --------------------------------Main----------------------------- */
 
 .about {
     background-color: #004e89;
-    height: 500px;
+    height: auto;
     padding: 40px;
 }
+
 
 .quote {
     float: left;
@@ -118,60 +128,77 @@ height: 55px;
 }
 
 .workout-activ {
-    height: 650px;
+    height: auto;
+    border: solid 2px;
+    border-radius: 0.3em;
+    border-color: #90caf9;
+    padding: 20px;
+
+}
+
+.workout-nav ul {
+    text-align: center;
+    clear: both;
+}
+
+.workout-nav li {
+    display: inline;
+    padding: 5px;
+    margin: 0 5px;
+    list-style-type: none;
+}
+
+.workout-points {
+    margin-top: 50px;
 }
 
 article {
     float: left;
-    width: 40%;
-    padding-right: 10%;
+    width: 45%;
+    padding-right: 5%;
 }
 
-/*Points*/
+
+.workout-activ h5 {
+    font-size: 1em;
+}
+
+/* --------------------------Points-----------------------*/
 fieldset {
     border: solid 3px;
     border-radius: 0.3em;
-    border-color: azure;
+    border-color: #90caf9;
 }
 
 .form {
     padding: 5px 10px;
 }
 
-/* Footer */
+/* --------------------------------Footer-------------------------------------- */
 
 footer {
     background-color: #004e89;
-    height: 40px;
+    height: auto;
     width: 100%;
     position: relative;
     bottom: 0;
+    padding: 10px 0px;
+    text-align: center;
 }
 
 .footer h6 {
     margin: 0;
     padding: 0;
+    
 }
 
-/* Screen Size Adjustments
-On screens that are larger than 769px will have content on 70% of the screen.
-*/
+/* ----------------------------- Responsiveness --------------------------------*/
 
-@media(min-width: 1319px) {
-
-    .container {
-        width: 70%;
-        margin: 0 auto;
-
-    }
-
-}
-
-/* responsive design for medium screens */
+/* ---------------------responsive design for medium screens---------------------- */
 @media(max-width: 1243px) {
 
     body {
-        font-size: 1.5em;
+        font-size: 18px;
     }
     .container {
         width: 90%;
@@ -179,8 +206,10 @@ On screens that are larger than 769px will have content on 70% of the screen.
     }
 
     .greeting {
-        padding-top: 150px;
+        height: auto;
+        margin-top: 120px;
     }
+
     .greeting h1 {
         width: 90%;
         height: auto;
@@ -191,7 +220,23 @@ On screens that are larger than 769px will have content on 70% of the screen.
     }
 
     .about {
-        padding-top: 115px;
+        padding-top: 40px;
+    }
+
+    .about h2 {
+        margin-top: 0;
+    }
+
+    .all-quotes {
+        width: 100%;
+        margin: 0;
+        padding: 0;
+        height: auto;
+    }
+
+    .quote {
+        width: 45%;
+        margin: 12px;
     }
 
     header {
@@ -211,16 +256,28 @@ On screens that are larger than 769px will have content on 70% of the screen.
     }
 }
 
-/* Responsive design for small screens */
+/* --------------------Small Screens--------------------- */
 @media(max-width: 980px) {
+
     body {
-        font-size: 2em;
+        font-size: 16px;
     }
 
     header {
-        height: 150px;
+        height: auto;
         position: absolute;
         top: 0;
+        padding-top: 20px;
+        padding-bottom: 20px;
+    }
+
+    .name {
+        font-size: 1.75em;
+        padding-bottom: 30px; 
+    }
+
+    .main-nav li {
+        float: left;
     }
 
     .container {
@@ -228,72 +285,38 @@ On screens that are larger than 769px will have content on 70% of the screen.
     }
 
     .greeting {
-        padding-top: 150px;
+        height: auto;
+        margin-top: 100px;
     }
     .greeting h1 {
         width: 90%;
         height: auto;
+        margin-bottom: 20px;
+        margin-top: 130px;
     }
     .greeting h2 {
         width: 70%;
         height: auto;
+        border-radius: 10px;
     }
 
     .about {
-        height: 1800px;
+        height: auto;
+        padding-top: 40px;
+        margin: 0;
     }
+    .about h2 {
+        margin-top: 0;
+    }
+
+
     .quote {
         width: 90%;
+        margin: 20px;
     }
 
     .workout-activ {
-        height: 1700px;
-    }
-    article {
-        float: none;
-    }
-
-    
-}
-
-@media(max-width: 975px) {
-
-    body {
-        font-size: 2em;
-    }
-
-    header {
-        height: 260px;
-        position: absolute;
-        top: 0;
-    }
-
-
-    .container {
-        width: 90%;
-    }
-
-    .greeting {
-        padding-top: 250px;
-    }
-    .greeting h1 {
-        width: 90%;
         height: auto;
-    }
-    .greeting h2 {
-        width: 70%;
-        height: auto;
-    }
-
-    .about {
-        height: 2300px;
-    }
-    .quote {
-        width: 90%;
-    }
-
-    .workout-activ {
-        height: 2300px;
     }
     article {
         float: none;
