@@ -290,6 +290,7 @@ footer {
     }
     .greeting h1 {
         width: 90%;
+        font-size: 60px;
         height: auto;
         margin-bottom: 20px;
         margin-top: 130px;
@@ -302,17 +303,17 @@ footer {
 
     .about {
         height: auto;
-        padding-top: 40px;
+        padding: 40px 0 0 0;
+
         margin: 0;
     }
     .about h2 {
         margin-top: 0;
     }
 
-
     .quote {
-        width: 90%;
-        margin: 20px;
+        width: auto ;
+        margin: 10px auto;
     }
 
     .workout-activ {
