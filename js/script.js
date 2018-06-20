@@ -1,11 +1,7 @@
-//Variables//
-var formResponse = [];
-
-//functions//
-
-//Funtion to add to HTML within <div> marked with the id 'output'//
-function print(message) {
-    var outputDiv = document.getElementById('output');
-    outputDiv.innerHTML = message;
+function welcome() {
+    alert("Welcome to Papa's Challenge! We are so glad you are here. Please take a look around.");
 }
+
+//welcome();
+
 

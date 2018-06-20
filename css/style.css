@@ -7,22 +7,23 @@ html, body {
     background-color: #1a659e;
     font-family: Arial, Helvetica, sans-serif;
     color: #90caf9;
+    font-size: 16px;
 }
 
 .container {
-    width: 80%;
+    width: 70%;
   margin: 0 auto;
   padding: 0px;
 }
 
-/* ------------------------------ Links --------------------------------*/
+/* ------------------- Links -------------------------*/
 
 a {
     color: #f7c59f;
     text-decoration: none;
 }
 
-/* -----------------------------Header------------------------------------ */
+/* --------------------Header------------------------ */
 
 header {
 width: 100%;
@@ -66,7 +67,7 @@ padding-bottom: 20px;
     margin: 0 5px;
 }
 
-/* ---------------------------------Greeting-------------------------- */
+/* ---------------------Greeting---------------------- */
 
 .greeting {
     padding-top: 60px;
@@ -102,7 +103,7 @@ padding-bottom: 20px;
     padding: 10px;
 }
 
-/* --------------------------------Main----------------------------- */
+/* ------------------------Main----------------------- */
 
 .about {
     background-color: #004e89;
@@ -124,7 +125,7 @@ padding-bottom: 20px;
     padding: 5px;
     margin: 0;
     float: right;
-    font-size: 1em;
+    font-size: 1rem;
 }
 
 .workout-activ {
@@ -163,7 +164,7 @@ article {
     font-size: 1em;
 }
 
-/* --------------------------Points-----------------------*/
+/* ---------------------Points-------------------*/
 fieldset {
     border: solid 3px;
     border-radius: 0.3em;
@@ -174,7 +175,7 @@ fieldset {
     padding: 5px 10px;
 }
 
-/* --------------------------------Footer-------------------------------------- */
+/* ---------------------Footer--------------------- */
 
 footer {
     background-color: #004e89;
@@ -192,9 +193,9 @@ footer {
     
 }
 
-/* ----------------------------- Responsiveness --------------------------------*/
+/* ----------------- Responsiveness ----------------------*/
 
-/* ---------------------responsive design for medium screens---------------------- */
+/* -----------responsive design for medium screens--------- */
 @media(max-width: 1243px) {
 
     body {
@@ -256,7 +257,7 @@ footer {
     }
 }
 
-/* --------------------Small Screens--------------------- */
+/* -----------------Small Screens------------------ */
 @media(max-width: 980px) {
 
     body {
