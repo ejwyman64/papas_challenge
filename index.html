@@ -7,7 +7,7 @@
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <link rel="stylesheet" type="text/css" href="./css/normalize.css">
         <link rel="stylesheet" type="text/css" href="./css/style.css">
-        <link rel="stylesheet" type="text/css" href="./css/selectors.css">
+        <link rel="stylesheet" type="text/css" href="./css/form.css">
     </head>
     <body>
         <header >
@@ -158,57 +158,85 @@
                             </div>
 
                             <div class="form">
-                                <input type="checkbox" id="stretching" name="stretching" value="stretching">
+                                <input type="checkbox" id="stretching" name="stretching" value="stretching" onclick="showReps()">
                                 <label for="stretching">stretching</label>
+                                <div id="stretchMinutes" class="stretch-minutes">
+                                    <label for="stretchMinutes">How long did you stretch?</label>
+                                    <select  name="stretchMinutes">
+                                        <option id="fifteenMin" value="15">15 minutes</option>
+                                        <option id="thirtyMin" value="30">30 minutes</option>
+                                    </select>
+                                </div>
+                                <!-- <input type="text" id="stretchTime" name="stretchTime" class="stretchTime" placeholder="How long did you stretch?"> -->
                             </div>
 
                             <div class="form">
-                                <input type="checkbox" id="squats" name="squats" value="squats">
+                                <input class="basic" type="checkbox" id="squats" name="squats" value="squats" onclick="showReps2()">
                                 <label for="squats">squats</label>    
+                                
 
-                                <input type="checkbox" id="push-ups" name="push-ups" value="push-ups">
-                                <label for="push-ups">push-ups</label>
+                                <input class="basic" type="checkbox" id="pushups" name="pushups" value="pushups" onclick="showReps2()">
+                                <label for="pushups">push ups</label>
 
-                                <input type="checkbox" id="lunges" name="lunges" value="lunges">
-                                <label for="lunges">lunges</label>                        
-                                </div>
+                                <input class="basic" type="checkbox" id="lunges" name="lunges" value="lunges" onclick="showReps2()">
+                                <label for="lunges">lunges</label>      
+                                <div id="basicReps" class="basic-reps">
+                                    <label for="squatsPushupsLunges">How many reps did you do altogether?</label>
+                                    <select name="squatsPushupsLunges">
+                                        <option id="fifty" value="50">50</option>
+                                        <option id="oneHundred" value="100">100</option>
+                                        <option id="oneHundredFifty" value="150">150</option>
+                                        <option id="twoHundred" value="200">200</option>
+                                        <option id="twoHundredFifty" value="250">250</option>
+                                        <option id="threeHundred" value="300">300</option>
+                                    </select>
+                                </div>                  
+                            </div>
 
                             <div class="form">
-                                <input type="checkbox" id="burpees" name="burpees" value="burpees">
+                                <input type="checkbox" id="burpees" name="burpees" value="burpees" onclick="showReps()">
                                 <label for="burpees">burpees</label>    
 
-                                <input type="checkbox" id="pullups" name="pullups" value="pullups">
+                                <input type="checkbox" id="pullups" name="pullups" value="pullups" onclick="showReps()">
                                 <label for="pullups">pullups</label>
 
-                                <input type="checkbox" id="dips" name="dips" value="dips">
+                                <input type="checkbox" id="dips" name="dips" value="dips" onclick="showReps()">
                                 <label for="dips">dips</label>       
                             </div>
 
                             <div class="form">
-                                <input type="checkbox" id="jjacks" name="jjacks" value="jjacks">
+                                <input type="checkbox" id="jjacks" name="jjacks" value="jjacks" onclick="showReps()">
                                 <label for="jjacks">jumping jacks</label>
+                                <select>
+                                    <option id="oneHundred" value="100">100</option>
+                                    <option id="twoHundred" value="200">200</option>
+                                    <option id="threeHundred" value="300">300</option>
+                                    <option id="fourHundred" value="400">400</option>
+                                    <option id="fiveHundred" value="500">500</option>
+                                  </select>
                             </div>
 
                              <div class="form">
-                                <input type="checkbox" id="plank" name="plank" value="plank">
+                                <input type="checkbox" id="plank" name="plank" value="plank" onclick="showReps()">
                                 <label for="plank">plank</label>
                             </div>
 
                             <div class="form">
-                                <input type="checkbox" id="core" name="core" value="core">
+                                <input type="checkbox" id="core" name="core" value="core" onclick="showReps()">
                                 <label for="core">core workout</label>
-                                <input type="checkbox" id="hips" name="hips" value="hip">
+                                <input type="checkbox" id="hips" name="hips" value="hip" onclick="showReps()">
                                 <label for="hip">hip workout</label>
                             </div>
 
                             <div class="form">
-                                <input type="checkbox" id="class" name="class" value="class">
+                                <input type="checkbox" id="class" name="class" value="class" onclick="showReps()">
                                 <label for="class">workout class</label>
-                                <input type="checkbox" id="gym" name="gym" value="gym">
+                                <input type="checkbox" id="gym" name="gym" value="gym" onclick="showReps()">
                                 <label for="gym">use gym</label>
-                                <input type="checkbox" id="run" name="run" value="run">
+                                <input type="checkbox" id="run" name="run" value="run" onclick="showReps()">
                                 <label for="run">go for run or walk</label>
                             </div>
+                            <input type="submit" id="submit" name="submit" value="submit">
                         </fieldset>
                     </form>
                         </div>

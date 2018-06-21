@@ -1,7 +1,24 @@
-function welcome() {
-    alert("Welcome to Papa's Challenge! We are so glad you are here. Please take a look around.");
+function showReps() {
+    var checkBox = document.getElementById("stretching");
+    var lenghtOfStretch = document.getElementById("stretchMinutes");
+
+    if (checkBox.checked == true){
+        lenghtOfStretch.style.visibility = "visible";
+        } else {
+        lenghtOfStretch.style.visibility = "hidden";
+        }
+
 }
 
-//welcome();
+function showReps2() {
+    var checkBox = document.getElementById("squats, pushups, lunges");
+    var reps = document.getElementById("basicReps");
 
+    if (checkBox.checked == true){
+        reps.style.visibility = "visible";
+        } else {
+        reps.style.visibility = "hidden";
+        }
+
+}
 
