@@ -6,17 +6,12 @@ input[type="submit"] {
     
 }
 
-input[type="checkbox"] {
-    
-}
-
 input[type="checkbox"]:checked + label {
     font-weight: bold;
 }
 
 /* --- Stretching -------------------------------*/
 
-.stretch-minutes,
-.basic-reps {
-    visibility: hidden;
+.stretch-minutes {
+    display: none;
 }

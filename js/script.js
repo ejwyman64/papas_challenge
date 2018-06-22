@@ -1,24 +1,13 @@
-function showReps() {
-    var checkBox = document.getElementById("stretching");
-    var lenghtOfStretch = document.getElementById("stretchMinutes");
+var formBoxes = [];
 
-    if (checkBox.checked == true){
-        lenghtOfStretch.style.visibility = "visible";
-        } else {
-        lenghtOfStretch.style.visibility = "hidden";
-        }
+const stretchBox = document.getElementById('stretching');
+const stretchDiv = document.getElementById('stretchMinutes');
 
-}
-
-function showReps2() {
-    var checkBox = document.getElementById("squats, pushups, lunges");
-    var reps = document.getElementById("basicReps");
-
-    if (checkBox.checked == true){
-        reps.style.visibility = "visible";
-        } else {
-        reps.style.visibility = "hidden";
-        }
-
-}
+stretchBox.addEventListener('click', () => {
+    if (stretchDiv.style.display == 'block') {
+        stretchDiv.style.display = 'none';
+    } else {
+        stretchDiv.style.display = 'block';
+    }
+})
 
