@@ -6,7 +6,7 @@ html, body {
     width: 100%;
     background-color: #1a659e;
     font-family: Arial, Helvetica, sans-serif;
-    color: #90caf9;
+    color: #fff;
     font-size: 16px;
 }
 
@@ -19,7 +19,7 @@ html, body {
 /* ------------------- Links -------------------------*/
 
 a {
-    color: #f7c59f;
+    color: #008080;
     text-decoration: none;
 }
 
@@ -30,13 +30,13 @@ width: 100%;
 position: fixed;
 top: 0;
 z-index: 10;
-background-color: #ff6b35;
+background-color: #C9F227;
 height: auto;
 padding-bottom: 20px;
 }
 
 .name {
-    color: #f7c59f;
+    color: #008080;
     font-family: Arial, Helvetica, sans-serif;
     float: left;
     margin: 0;
@@ -59,7 +59,7 @@ padding-bottom: 20px;
 }
 
 .main-nav li {
-    color: #f7c59f;
+    color: #008080;
     font-family: Arial, Helvetica, sans-serif;
     float: right;
     height: 100%;
@@ -84,7 +84,7 @@ padding-bottom: 20px;
 }
 
 .greeting h1 {
-    color: #ff6b35;
+    color: #E00000;
     font-size: 100px;
     text-align: center;
     margin: 40px auto;
@@ -93,14 +93,19 @@ padding-bottom: 20px;
 }
 
 .greeting h2 {
-    color: #f7c59f;
+    color: #008080;
     text-align: center;
-    background: #ff6b35;
+    background: #C9F227;
     border-radius: 5px;
     margin: 0 auto;
+    margin-bottom: 10px;
     width: 400px;
     height: 30px;
     padding: 10px;
+}
+
+.greeting #surprise {
+    width: 500px;
 }
 
 /* ------------------------Main----------------------- */
@@ -115,7 +120,7 @@ padding-bottom: 20px;
 .quote {
     float: left;
     width: 28%;
-    border: solid #1a659e 2px;
+    border: solid #C9F227 2px;
     border-radius: 5px;
     padding: 10px;
     margin: 5px;
@@ -132,7 +137,7 @@ padding-bottom: 20px;
     height: auto;
     border: solid 2px;
     border-radius: 0.3em;
-    border-color: #90caf9;
+    border-color: #C9F227;
     padding: 20px;
 
 }
@@ -147,6 +152,11 @@ padding-bottom: 20px;
     padding: 5px;
     margin: 0 5px;
     list-style-type: none;
+}
+
+.workout-nav a {
+    color: #DCC6E0;
+    text-decoration: none;
 }
 
 .workout-points {
@@ -168,7 +178,7 @@ article {
 fieldset {
     border: solid 2px;
     border-radius: 0.3em;
-    border-color: #90caf9;
+    border-color: #C9F227;
 }
 
 .form {
@@ -188,6 +198,7 @@ footer {
 }
 
 .footer h6 {
+    color: #DCC6E0;
     margin: 0;
     padding: 0;
     

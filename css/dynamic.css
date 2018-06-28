@@ -10,8 +10,6 @@ input[type="checkbox"]:checked + label {
     font-weight: bold;
 }
 
-/* --- Stretching -------------------------------*/
-
-.stretch-minutes {
-    display: none;
+.greeting h2 {
+    cursor: pointer;
 }

@@ -7,7 +7,7 @@
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <link rel="stylesheet" type="text/css" href="./css/normalize.css">
         <link rel="stylesheet" type="text/css" href="./css/style.css">
-        <link rel="stylesheet" type="text/css" href="./css/form.css">
+        <link rel="stylesheet" type="text/css" href="./css/dynamic.css">
     </head>
     <body>
         <header >
@@ -25,7 +25,8 @@
         </header>
         <div class="greeting">
             <h1>Papa's Challenge</h1>
-            <h2>Join for fitness, join for fun!</h2>
+            <h2 id="reveal">Join for fitness, join for fun!</h2>
+            <h2 id="surprise">Welcome! Let's compete for our health!</h2>
             <div class="spacer" style="clear: both;"></div>
         </div>
         <main>
@@ -170,7 +171,7 @@
                                 <!-- <input type="text" id="stretchTime" name="stretchTime" class="stretchTime" placeholder="How long did you stretch?"> -->
                             </div>
 
-                            <div class="form">
+                            <div class="form" id="squatsPushupsLunges">
                                 <input class="basic" type="checkbox" id="squats" name="squats" value="squats" onclick="showReps2()">
                                 <label for="squats">squats</label>    
                                 
@@ -179,7 +180,8 @@
                                 <label for="pushups">push ups</label>
 
                                 <input class="basic" type="checkbox" id="lunges" name="lunges" value="lunges" onclick="showReps2()">
-                                <label for="lunges">lunges</label>      
+                                <label for="lunges">lunges</label>   
+                                   
                                 <div id="basicReps" class="basic-reps">
                                     <label for="squatsPushupsLunges">How many reps did you do altogether?</label>
                                     <select name="squatsPushupsLunges">
@@ -219,6 +221,13 @@
                              <div class="form">
                                 <input type="checkbox" id="plank" name="plank" value="plank" onclick="showReps()">
                                 <label for="plank">plank</label>
+                                <div id="plankTime" class="plank-time">
+                                    <label for="plankTime">How long did you plank?</label>
+                                    <select  name="plankTime">
+                                        <option id="150sec" value="150">150 seconds</option>
+                                        <option id="300sec" value="300">300 seconds</option>
+                                    </select>
+                                </div>
                             </div>
 
                             <div class="form">
@@ -263,6 +272,7 @@
                 <div class="spacer" style="clear: both;"></div>
             </div>
         </footer>
+    <script src="js/jquery-3.3.1.min.js"></script>
     <script src="js/script.js"></script>
     </body>
 </html>
