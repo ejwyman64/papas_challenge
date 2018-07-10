@@ -1,0 +1,282 @@
+/*--- Mobile First CSS ---------------*/
+@media (min-width:200px) {
+    /*--- Body Structure ---------------*/
+
+    html, body {
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        margin: 0px;
+        padding: 0px;
+        width: 100%;
+        background-color: #1a659e;
+        font-family: Arial, Helvetica, sans-serif;
+        color: #fff;
+        font-size: 16px;
+    }
+
+    /*--- Links ---------------*/
+    a {
+        color: #008080;
+        text-decoration: none;
+    }
+
+    /*--- Header ---------------*/
+    header {
+        justify-content: flex-start;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        background-color: #C9F227;
+        padding: auto;
+        }
+        
+        .name {
+            flex-wrap: wrap;
+            align-self: auto;
+            color: #008080;
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 2.5rem;
+            text-align: center;
+            margin: 0;
+            padding: 10px 0;
+            flex-grow: 1;
+        }
+
+        
+        .main-nav {
+            display: flex;
+            flex-wrap: wrap;
+            flex-direction: column;
+            align-items: center;
+            list-style-type: none;
+            margin: 5px;
+            padding: 0;
+            flex-grow: 2;
+        }
+        
+        .main-nav li {
+            color: #008080;
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 1.5rem;
+            flex-grow: 1;
+            padding: 10px;
+        }
+        
+        /* ---Greeting---------------------- */
+        
+        .greeting {
+            display: flex;
+            align-items: center;
+            flex-direction: column;
+            justify-content: space-between;
+            background-color: #004e89;
+            background-image:   linear-gradient(transparent, #004e89),
+                                url("../img/mwyman.jpg");
+            background-repeat: no-repeat;
+            background-position:center;
+            background-size: cover;
+        }
+        
+        .greeting h1 {
+            color: #E00000;
+            font-size: 3rem;
+            text-align: center;
+            margin: 60px auto;
+        }
+        
+        .greeting h2 {
+            color: #008080;
+            text-align: center;
+            background: #C9F227;
+            border-radius: 5px;
+            margin: 20px auto 80px auto;
+            padding: 10px;
+            cursor: pointer;
+        }
+        
+        /* ---Main----------------------- */
+        
+        /*about-----------------------------------*/
+
+        .about {
+            display: flex;
+            flex-wrap: wrap;
+            flex-direction: column;
+            align-items: center;
+            background-image: linear-gradient(#004e89 90%, #1a659e);
+            padding-bottom: 80px;
+            font-size: 1.2rem;
+        }
+
+        .about h2,
+        .about p {
+            padding: 10px;
+            margin: 0;
+            flex-grow: 1;
+        }
+        
+        /*quotes----------------------------------*/
+
+        .quote {
+            display: flex;
+            flex-direction: column;
+            flex-grow: 1;
+            flex-basis: 200px;
+            border: solid #C9F227 2px;
+            border-radius: 5px;
+            padding: 10px;
+            margin: 10px;
+            font-size: 1.2rem;
+
+        }
+        
+        .quote h6 {
+            justify-content: flex-end;
+            align-self: flex-end;
+            font-size: 1rem;
+            padding: 5px;
+            margin: 0;
+        }
+        
+        /*guidelines------------------------------*/
+
+        .guidelines {
+            display: flex;
+            flex-wrap: wrap;
+            flex-direction: column;
+            align-items: center;
+            font-size: 1.2rem;
+
+        }
+
+        .guidelines-intro h2,
+        .guidelines-intro p {
+            padding: 10px;
+            margin: 0;
+            flex-grow: 1;
+        }
+        
+        /*workout navigation --------------------*/
+
+        .workout-nav ul {
+            display: flex;
+            flex-direction: column;
+            align-content: center;
+            justify-content: space-between;
+            margin: 0;
+            padding: 0;
+        }
+        
+        .workout-nav li {
+            font-size: 1.2rem;
+            padding: 10px;
+            margin: auto;
+            list-style-type: none;
+        }
+        
+        .workout-nav a {
+            color: #DCC6E0;
+            text-decoration: none;
+        }
+
+        /*various workout points ------------------*/
+
+        .workout-points h3,
+        .workout-points h4 {
+            padding: 10px;
+            margin: 0;
+            flex-grow: 1;
+        }
+
+        .workout-points {
+            display: flex;
+            flex-direction: column;
+            margin-top: 50px;
+        }
+
+        /*articles ---------------------------------*/
+        .articles {
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            border: solid 2px;
+            border-radius: 0.3em;
+            border-color: #C9F227;
+            padding: 20px 20px 0 20px;
+        
+        }
+        
+        article {
+            display: flex;
+            flex-direction: column;
+            border-radius: 5px;
+            padding: 0;
+            margin: 0 0 20px 0;
+            font-size: 1.2rem;
+        }
+
+        article h5,
+        article p {
+            padding: 0;
+            margin: 5px 0;
+        }
+
+        article ul {
+            margin: 0;
+            padding: 0;
+            padding-left: 20px;
+        }
+
+        article li {
+            padding: 5px 0;
+        }
+
+        /*steps ------------------------------------*/
+
+            /*start here!*/
+        
+        /* ---Points-------------------*/
+        .enter-points {
+            font-size: 1.2rem;
+        }
+      
+        fieldset {
+            border: solid 2px;
+            border-radius: 0.3em;
+            border-color: #C9F227;
+        }
+        
+        .form {
+            padding: 5px 10px;
+        }
+        
+        input[type="checkbox"],
+        input[type="submit"] {
+            cursor: pointer;
+        }
+
+input[type="checkbox"]:checked + label {
+    font-weight: bold;
+}
+        
+        /* ---Footer--------------------- */
+        
+        footer {
+            background-color: #004e89;
+            height: auto;
+            width: 100%;
+            position: relative;
+            bottom: 0;
+            padding: 10px 0px;
+            text-align: center;
+        }
+        
+        .footer h6 {
+            color: #DCC6E0;
+            margin: 0;
+            padding: 0;
+            
+        }
+
+} /*--- Media 769 end bracket ---------------*/
