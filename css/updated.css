@@ -31,252 +31,311 @@
         padding: auto;
         }
         
-        .name {
-            flex-wrap: wrap;
-            align-self: auto;
-            color: #008080;
-            font-family: Arial, Helvetica, sans-serif;
-            font-size: 2.5rem;
-            text-align: center;
-            margin: 0;
-            padding: 10px 0;
-            flex-grow: 1;
-        }
+    .name {
+        flex-wrap: wrap;
+        align-self: auto;
+        color: #008080;
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: 2.5rem;
+        text-align: center;
+        margin: 0;
+        padding: 10px 0;
+        flex-grow: 1;
+    }
 
-        
-        .main-nav {
-            display: flex;
-            flex-wrap: wrap;
-            flex-direction: column;
-            align-items: center;
-            list-style-type: none;
-            margin: 5px;
-            padding: 0;
-            flex-grow: 2;
-        }
-        
-        .main-nav li {
-            color: #008080;
-            font-family: Arial, Helvetica, sans-serif;
-            font-size: 1.5rem;
-            flex-grow: 1;
-            padding: 10px;
-        }
-        
-        /* ---Greeting---------------------- */
-        
-        .greeting {
-            display: flex;
-            align-items: center;
-            flex-direction: column;
-            justify-content: space-between;
-            background-color: #004e89;
-            background-image:   linear-gradient(transparent, #004e89),
-                                url("../img/mwyman.jpg");
-            background-repeat: no-repeat;
-            background-position:center;
-            background-size: cover;
-        }
-        
-        .greeting h1 {
-            color: #E00000;
-            font-size: 3rem;
-            text-align: center;
-            margin: 60px auto;
-        }
-        
-        .greeting h2 {
-            color: #008080;
-            text-align: center;
-            background: #C9F227;
-            border-radius: 5px;
-            margin: 20px auto 80px auto;
-            padding: 10px;
-            cursor: pointer;
-        }
-        
-        /* ---Main----------------------- */
-        
-        /*about-----------------------------------*/
+    
+    .main-nav {
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: column;
+        align-items: center;
+        list-style-type: none;
+        margin: 5px;
+        padding: 0;
+        flex-grow: 2;
+    }
+    
+    .main-nav li {
+        color: #008080;
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: 1.5rem;
+        flex-grow: 1;
+        padding: 10px;
+    }
+    
+    /* ---Greeting---------------------- */
+    
+    .greeting {
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        justify-content: space-between;
+        background-color: #004e89;
+        background-image:   linear-gradient(transparent, #004e89),
+                            url("../img/mwyman.jpg");
+        background-repeat: no-repeat;
+        background-position:center;
+        background-size: cover;
+    }
+    
+    .greeting h1 {
+        color: #E00000;
+        font-size: 3rem;
+        text-align: center;
+        margin: 60px auto;
+    }
+    
+    .greeting h2 {
+        color: #008080;
+        text-align: center;
+        background: #C9F227;
+        border-radius: 5px;
+        margin: 20px auto 80px auto;
+        padding: 10px;
+        cursor: pointer;
+    }
+    
+    /* ---Main----------------------- */
+    
+    /*about-----------------------------------*/
 
-        .about {
-            display: flex;
-            flex-wrap: wrap;
-            flex-direction: column;
-            align-items: center;
-            background-image: linear-gradient(#004e89 90%, #1a659e);
-            padding-bottom: 80px;
-            font-size: 1.2rem;
-        }
+    .about {
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: column;
+        align-items: center;
+        background-image: linear-gradient(#004e89 90%, #1a659e);
+        padding-bottom: 80px;
+        font-size: 1.2rem;
+    }
 
-        .about h2,
-        .about p {
-            padding: 10px;
-            margin: 0;
-            flex-grow: 1;
-        }
-        
-        /*quotes----------------------------------*/
+    .about h2,
+    .about p {
+        padding: 10px;
+        margin: 0;
+        flex-grow: 1;
+    }
+    
+    /*quotes----------------------------------*/
 
-        .quote {
-            display: flex;
-            flex-direction: column;
-            flex-grow: 1;
-            flex-basis: 200px;
-            border: solid #C9F227 2px;
-            border-radius: 5px;
-            padding: 10px;
-            margin: 10px;
-            font-size: 1.2rem;
+    .quote {
+        display: flex;
+        flex-direction: column;
+        flex-grow: 1;
+        flex-basis: 200px;
+        border: solid #C9F227 2px;
+        border-radius: 5px;
+        padding: 10px;
+        margin: 10px;
+        font-size: 1.2rem;
 
-        }
-        
-        .quote h6 {
-            justify-content: flex-end;
-            align-self: flex-end;
-            font-size: 1rem;
-            padding: 5px;
-            margin: 0;
-        }
-        
-        /*guidelines------------------------------*/
+    }
+    
+    .quote h6 {
+        justify-content: flex-end;
+        align-self: flex-end;
+        font-size: 1rem;
+        padding: 5px;
+        margin: 0;
+    }
+    
+    /*guidelines------------------------------*/
 
-        .guidelines {
-            display: flex;
-            flex-wrap: wrap;
-            flex-direction: column;
-            align-items: center;
-            font-size: 1.2rem;
+    .guidelines {
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: column;
+        align-items: center;
+        font-size: 1.2rem;
 
-        }
+    }
 
-        .guidelines-intro h2,
-        .guidelines-intro p {
-            padding: 10px;
-            margin: 0;
-            flex-grow: 1;
-        }
-        
-        /*workout navigation --------------------*/
+    .guidelines-intro h2,
+    .guidelines-intro p {
+        padding: 10px;
+        margin: 0;
+        flex-grow: 1;
+    }
 
-        .workout-nav ul {
-            display: flex;
-            flex-direction: column;
-            align-content: center;
-            justify-content: space-between;
-            margin: 0;
-            padding: 0;
-        }
-        
-        .workout-nav li {
-            font-size: 1.2rem;
-            padding: 10px;
-            margin: auto;
-            list-style-type: none;
-        }
-        
-        .workout-nav a {
-            color: #DCC6E0;
-            text-decoration: none;
-        }
+    .guidelines h3 {
+        padding: 10px;
+        margin: 0;
+        flex-grow: 1;
+    }
 
-        /*various workout points ------------------*/
+    .border {
+        flex-grow: 1;
+        border: solid 2px;
+        border-radius: 0.3em;
+        border-color: #C9F227;
+        padding: 10px 10px 0 10px;
+        margin: 0 10px 20px 10px;
+    }
+    
+    /*workout navigation --------------------*/
 
-        .workout-points h3,
-        .workout-points h4 {
-            padding: 10px;
-            margin: 0;
-            flex-grow: 1;
-        }
+    .workout-nav ul {
+        display: flex;
+        flex-direction: column;
+        align-content: center;
+        justify-content: space-between;
+        margin: 0;
+        padding: 0;
+    }
+    
+    .workout-nav li {
+        font-size: 1.2rem;
+        padding: 10px;
+        margin: auto;
+        list-style-type: none;
+    }
+    
+    .workout-nav a {
+        color: #DCC6E0;
+        text-decoration: none;
+    }
 
-        .workout-points {
-            display: flex;
-            flex-direction: column;
-            margin-top: 50px;
-        }
+    /*various workout points ------------------*/
 
-        /*articles ---------------------------------*/
-        .articles {
-            display: flex;
-            flex-direction: column;
-            justify-content: space-between;
-            border: solid 2px;
-            border-radius: 0.3em;
-            border-color: #C9F227;
-            padding: 20px 20px 0 20px;
-        
-        }
-        
-        article {
-            display: flex;
-            flex-direction: column;
-            border-radius: 5px;
-            padding: 0;
-            margin: 0 0 20px 0;
-            font-size: 1.2rem;
-        }
+    .workout-points h3,
+    .workout-points h4 {
+        padding: 10px;
+        margin: 0;
+        flex-grow: 1;
+    }
 
-        article h5,
-        article p {
-            padding: 0;
-            margin: 5px 0;
-        }
+    .workout-points {
+        display: flex;
+        flex-direction: column;
+        margin-top: 50px;
+    }
 
-        article ul {
-            margin: 0;
-            padding: 0;
-            padding-left: 20px;
-        }
+    /*articles ---------------------------------*/
+    .articles {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        border: solid 2px;
+        border-radius: 0.3em;
+        border-color: #C9F227;
+        padding: 10px 10px 0 10px;
+        margin: 0 10px 20px 10px;
+    }
+    
+    article {
+        display: flex;
+        flex-direction: column;
+        border-radius: 5px;
+        padding: 0;
+        margin: 0 0 20px 0;
+        font-size: 1.2rem;
+    }
 
-        article li {
-            padding: 5px 0;
-        }
+    article h5,
+    article p {
+        padding: 0;
+        margin: 5px 0;
+    }
 
-        /*steps ------------------------------------*/
+    article ul {
+        margin: 0;
+        padding: 0;
+        padding-left: 20px;
+    }
 
-            /*start here!*/
-        
-        /* ---Points-------------------*/
-        .enter-points {
-            font-size: 1.2rem;
-        }
-      
-        fieldset {
-            border: solid 2px;
-            border-radius: 0.3em;
-            border-color: #C9F227;
-        }
-        
-        .form {
-            padding: 5px 10px;
-        }
-        
-        input[type="checkbox"],
-        input[type="submit"] {
-            cursor: pointer;
-        }
+    article li {
+        padding: 5px 0;
+    }
+    /*food & water -----------------------------*/
 
-input[type="checkbox"]:checked + label {
+    .food-water ul {
+        display: flex;
+        flex-direction: column;
+        border: solid 2px;
+        border-radius: 0.3em;
+        border-color: #C9F227;
+        padding: 10px 10px 10px 20px;
+        margin: 0 10px 20px 10px;
+    }
+
+    .food-water li {
+        margin: 10px;
+        padding: 0;
+        flex-grow: 1;
+    }
+    
+    /* ---Points-------------------*/
+    .enter-points {
+        display: flex;
+        flex-direction: column;
+        background: #5892cf;
+        background-image: linear-gradient(#1a659e, #5892cf 10%);
+        font-size: 1.2rem;
+    }
+    
+    fieldset {
+        border: solid 2px;
+        border-radius: 0.3em;
+        border-color: #C9F227;
+        margin: 10px;
+    }
+
+    .form {
+        margin: 20px auto;
+    }
+
+    .sleep ul,
+    .water ul,
+    .difficultyClass ul,
+    .difficultyGym ul,
+    .difficultyRun ul{
+        list-style-type: none;
+        margin: 5px auto;
+        padding: 0;
+    }
+
+    .difficultyClass ul,
+    .difficultyGym ul,
+    .difficultyRun ul {
+        padding-left: 20px;  
+    }
+
+    .difficultyClass li,
+    .difficultyGym li,
+    .difficultyRun li {
+        margin: 5px auto;
+    }
+
+    legend h3 {
+        margin-top: 0;
+    }
+    
+    input[type="checkbox"],
+    input[type="submit"] {
+        cursor: pointer;
+    }
+
+    input[type="checkbox"]:checked + label {
     font-weight: bold;
-}
+    }
+    
+    /* ---Footer--------------------- */
+    
+    footer {
+        background-color: #004e89;
+        height: auto;
+        width: 100%;
+        position: relative;
+        bottom: 0;
+        padding: 10px 0px;
+        text-align: center;
+    }
+    
+    .footer h6 {
+        color: #DCC6E0;
+        margin: 0;
+        padding: 0;
         
-        /* ---Footer--------------------- */
-        
-        footer {
-            background-color: #004e89;
-            height: auto;
-            width: 100%;
-            position: relative;
-            bottom: 0;
-            padding: 10px 0px;
-            text-align: center;
-        }
-        
-        .footer h6 {
-            color: #DCC6E0;
-            margin: 0;
-            padding: 0;
-            
-        }
+    }
 
 } /*--- Media 769 end bracket ---------------*/
