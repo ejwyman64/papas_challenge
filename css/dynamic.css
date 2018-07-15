@@ -4,6 +4,9 @@ input[type="checkbox"],
 input[type="submit"] {
     cursor: pointer;
     
+
+
+    
 }
 
 input[type="checkbox"]:checked + label {

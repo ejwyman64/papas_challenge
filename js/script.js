@@ -10,16 +10,16 @@ submitForm.addEventListener('click', () => {
 
 //When 'reveal' is clicked
 $('.greeting #surprise').hide();
-   
-    $('.greeting #reveal').click(function() {
-        //show the 'surprise'
-        $('.greeting #surprise').show();
 
-        //hide the 'reveal'
-        $('.greeting #reveal').hide();
-    });
+$('.greeting #reveal').click(function () {
+    //show the 'surprise'
+    $('.greeting #surprise').show();
 
-    $('.greeting #surprise').click(function() {
-        $('.greeting #reveal').show();
-        $('.greeting #surprise').hide();
-    });
+    //hide the 'reveal'
+    $('.greeting #reveal').hide();
+});
+
+$('.greeting #surprise').click(function () {
+    $('.greeting #reveal').show();
+    $('.greeting #surprise').hide();
+});
