@@ -1,4 +1,10 @@
-/*--- Mobile First CSS ---------------*/
+
+
+
+/*$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$*/
+/*--- Small Screens ---------------*/
+/*$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$*/
+
 @media (min-width:200px) {
     /*--- Body Structure ---------------*/
 
@@ -19,6 +25,12 @@
     a {
         color: #008080;
         text-decoration: none;
+        margin: 0;
+        padding: 0;
+    }
+
+    a:hover {
+        color: #E00000
     }
 
     /*--- Header ---------------*/
@@ -168,7 +180,7 @@
         border: solid 2px;
         border-radius: 0.3em;
         border-color: #C9F227;
-        padding: 10px 10px 0 10px;
+        padding: 10px;
         margin: 0 10px 20px 10px;
     }
     
@@ -280,6 +292,10 @@
         margin: 10px;
     }
 
+    fieldset a {
+        color: #DCC6E0;
+    }
+
     .form {
         margin: 20px auto;
     }
@@ -308,6 +324,10 @@
 
     legend h3 {
         margin-top: 0;
+    }
+
+    footer a {
+        color: #DCC6E0;
     }
     
     input[type="checkbox"],
@@ -338,4 +358,219 @@
         
     }
 
-} /*--- Media 769 end bracket ---------------*/
+} /*--- Media 200 end bracket ---------------*/
+
+
+/*$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$*/
+/*--- Medium Screens ---------------*/
+/*$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$*/
+@media (min-width:600px) {
+
+/*--- Header ---------------*/
+    header {
+        margin:0;
+        padding: 0;
+        align-items: flex-end;
+        height: 102px;
+    }
+
+    .main-navigation {
+        display: flex;
+        flex-direction: column;
+        align-self: flex-start;
+        width: 90%;
+        margin: 0 auto;
+        }
+
+    .main-nav {
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: row;
+        align-items: flex-end;
+        justify-content: center;
+    }
+
+    .main-nav li {
+        font-size: 1.2rem;
+        padding: 2px;
+        margin: 0 auto;
+        flex-grow: 0;
+    }
+    
+    /* ---Greeting---------------------- */
+    
+    .greeting {
+        display: flex;
+        align-self: stretch;
+        align-items: center;
+        flex-direction: column;
+        justify-content: space-between;
+        height: 600px;
+    }
+    
+    .greeting h1 {
+        font-size: 5rem;
+    }
+    
+    .greeting h2 {
+        font-size: 2rem;
+    }
+
+    /* ----------contain------------*/
+
+    .contain {
+        display: flex;
+        flex-direction: column;
+        width: 90%;
+        margin: 0 auto;
+    }
+
+    .workout-nav ul {
+        flex-direction: row;
+        justify-content: center;
+    }
+
+    .workout-nav li {
+        margin: 0 10px;
+    }
+
+    .form {
+        overflow: hidden;
+        margin: 40px auto;
+    }
+
+
+} /*--- Media 600 end bracket ---------------*/
+
+
+/*$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$*/
+/*--- Large Screens ---------------*/
+/*$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$*/
+@media (min-width:900px) {
+
+    .all-quotes {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+
+    .quote {
+        flex-basis: 40%;
+    }
+
+    .qThree {
+        order: -1;
+    }
+
+    .qOne {
+        order: 2;
+    }
+
+    .workout-nav {
+        visibility: collapse;
+    }
+
+    .contain-col {
+        margin: 0;
+        padding: 0;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        align-items: baseline;
+    }
+
+    .col1,
+    .col2 {
+        flex-basis: 40%;
+        flex-grow: 1;
+    }
+
+    /* .contain-form {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+
+    .form {
+        flex-basis: 40%;
+        flex-grow: 1;
+    } */
+
+    .form {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: flex-start;
+    }
+
+    .form input,
+    .form label,
+    .form div {
+        margin: auto 5px;
+    }
+
+    .water,
+     {
+        display: flex;
+        flex-direction: column;
+    }
+
+
+}/*--- Media 900 end bracket ---------------*/
+
+
+
+/*$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$*/
+/*--- Extra Large Screens ---------------*/
+/*$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$*/
+@media (min-width:1200px) {
+    .contain {
+        display: flex;
+        flex-direction: column;
+        width: 70%;
+        margin: 0 auto;
+    }
+
+    header {
+        height: 80px;
+    }
+
+    .main-navigation {
+        display: flex;
+        flex-direction: row;
+        align-self: flex-start;
+        width: 90%;
+        margin: 0 auto;
+        padding-top: 10px;
+        align-items: baseline;
+        justify-content: space-between;
+        }
+
+    .main-nav {
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: row;
+        align-items: flex-end;
+        justify-content: flex-end;
+    }
+
+    .main-nav li {
+        font-size: 1.2rem;
+        padding: 2px;
+        margin: 0 10px;
+        flex-grow: 0;
+    }
+
+    .greeting {
+        height: 900px;
+    }
+
+    .greeting h1 {
+        font-size: 9rem;
+        margin: 200px auto;
+    }
+
+    .enter-points {
+        font-size: 1.5rem;
+        margin-top: 100px;
+    }
+}
