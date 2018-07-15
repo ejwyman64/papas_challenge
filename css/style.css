@@ -1,338 +1,576 @@
-/* Structure */ 
-
-html, body {
-    margin: 0px;
-    padding: 0px;
-    width: 100%;
-    background-color: #1a659e;
-    font-family: Arial, Helvetica, sans-serif;
-    color: #fff;
-    font-size: 16px;
-}
-
-.container {
-    width: 70%;
-  margin: 0 auto;
-  padding: 0px;
-}
-
-/* ------------------- Links -------------------------*/
-
-a {
-    color: #008080;
-    text-decoration: none;
-}
-
-/* --------------------Header------------------------ */
-
-header {
-width: 100%;
-position: fixed;
-top: 0;
-z-index: 10;
-background-color: #C9F227;
-height: auto;
-padding-bottom: 20px;
-}
-
-.name {
-    color: #008080;
-    font-family: Arial, Helvetica, sans-serif;
-    float: left;
-    margin: 0;
-    position: relative;
-    top: 10px; 
-}
-
-.main-nav {
-    float: right;
-    height: 100%;
-    margin: 0;
-    padding: 0;
-    position: relative;
-    top: 10px;
-    list-style-type: none;
-}
-
-.main-nav ul {
-    display: inline;
-}
-
-.main-nav li {
-    color: #008080;
-    font-family: Arial, Helvetica, sans-serif;
-    float: right;
-    height: 100%;
-    padding: 5px;
-    margin: 0 5px;
-}
-
-/* ---------------------Greeting---------------------- */
-
-.greeting {
-    padding-top: 60px;
-    background-color: #004e89;
-    background-image: url("../img/mwyman.jpg");
-    background-repeat: no-repeat;
-    background-position:center;
-    background-size: cover;
-    height: auto;
-    width: 100%;
-    margin: 50px 0 0 0;
-    padding-top: 150px;
-    padding-bottom: 400px;
-}
-
-.greeting h1 {
-    color: #E00000;
-    font-size: 100px;
-    text-align: center;
-    margin: 40px auto;
-    width: 70%;
-    height: 30%;
-}
-
-.greeting h2 {
-    color: #008080;
-    text-align: center;
-    background: #C9F227;
-    border-radius: 5px;
-    margin: 0 auto;
-    margin-bottom: 10px;
-    width: 400px;
-    height: 30px;
-    padding: 10px;
-}
-
-.greeting #surprise {
-    width: 500px;
-}
-
-/* ------------------------Main----------------------- */
-
-.about {
-    background-color: #004e89;
-    height: auto;
-    padding: 40px;
-}
 
 
-.quote {
-    float: left;
-    width: 28%;
-    border: solid #C9F227 2px;
-    border-radius: 5px;
-    padding: 10px;
-    margin: 5px;
-}
 
-.quote h6 {
-    padding: 5px;
-    margin: 0;
-    float: right;
-    font-size: 1rem;
-}
+/*$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$*/
+/*--- Small Screens ---------------*/
+/*$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$*/
 
-.workout-activ {
-    height: auto;
-    border: solid 2px;
-    border-radius: 0.3em;
-    border-color: #C9F227;
-    padding: 20px;
+@media (min-width:200px) {
+    /*--- Body Structure ---------------*/
 
-}
-
-.workout-nav ul {
-    text-align: center;
-    clear: both;
-}
-
-.workout-nav li {
-    display: inline;
-    padding: 5px;
-    margin: 0 5px;
-    list-style-type: none;
-}
-
-.workout-nav a {
-    color: #DCC6E0;
-    text-decoration: none;
-}
-
-.workout-points {
-    margin-top: 50px;
-}
-
-article {
-    float: left;
-    width: 45%;
-    padding-right: 5%;
-}
-
-
-.workout-activ h5 {
-    font-size: 1em;
-}
-
-/* ---------------------Points-------------------*/
-fieldset {
-    border: solid 2px;
-    border-radius: 0.3em;
-    border-color: #C9F227;
-}
-
-.form {
-    padding: 5px 10px;
-}
-
-/* ---------------------Footer--------------------- */
-
-footer {
-    background-color: #004e89;
-    height: auto;
-    width: 100%;
-    position: relative;
-    bottom: 0;
-    padding: 10px 0px;
-    text-align: center;
-}
-
-.footer h6 {
-    color: #DCC6E0;
-    margin: 0;
-    padding: 0;
-    
-}
-
-/* ----------------- Responsiveness ----------------------*/
-
-/* -----------responsive design for medium screens--------- */
-@media(max-width: 1243px) {
-
-    body {
-        font-size: 18px;
+    html, body {
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        margin: 0px;
+        padding: 0px;
+        width: 100%;
+        background-color: #1a659e;
+        font-family: Arial, Helvetica, sans-serif;
+        color: #fff;
+        font-size: 16px;
     }
-    .container {
+
+    /*--- Links ---------------*/
+    a {
+        color: #008080;
+        text-decoration: none;
+        margin: 0;
+        padding: 0;
+    }
+
+    a:hover {
+        color: #E00000
+    }
+
+    /*--- Header ---------------*/
+    header {
+        justify-content: flex-start;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        background-color: #C9F227;
+        padding: auto;
+        }
+        
+    .name {
+        flex-wrap: wrap;
+        align-self: auto;
+        color: #008080;
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: 2.5rem;
+        text-align: center;
+        margin: 0;
+        padding: 10px 0;
+        flex-grow: 1;
+    }
+
+    
+    .main-nav {
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: column;
+        align-items: center;
+        list-style-type: none;
+        margin: 5px;
+        padding: 0;
+        flex-grow: 2;
+    }
+    
+    .main-nav li {
+        color: #008080;
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: 1.5rem;
+        flex-grow: 1;
+        padding: 10px;
+    }
+    
+    /* ---Greeting---------------------- */
+    
+    .greeting {
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        justify-content: space-between;
+        background-color: #004e89;
+        background-image:   linear-gradient(transparent, #004e89),
+                            url("../img/mwyman.jpg");
+        background-repeat: no-repeat;
+        background-position:center;
+        background-size: cover;
+    }
+    
+    .greeting h1 {
+        color: #E00000;
+        font-size: 3rem;
+        text-align: center;
+        margin: 60px auto;
+    }
+    
+    .greeting h2 {
+        color: #008080;
+        text-align: center;
+        background: #C9F227;
+        border-radius: 5px;
+        margin: 20px auto 80px auto;
+        padding: 10px;
+        cursor: pointer;
+    }
+    
+    /* ---Main----------------------- */
+    
+    /*about-----------------------------------*/
+
+    .about {
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: column;
+        align-items: center;
+        background-image: linear-gradient(#004e89 90%, #1a659e);
+        padding-bottom: 80px;
+        font-size: 1.2rem;
+    }
+
+    .about h2,
+    .about p {
+        padding: 10px;
+        margin: 0;
+        flex-grow: 1;
+    }
+    
+    /*quotes----------------------------------*/
+
+    .quote {
+        display: flex;
+        flex-direction: column;
+        flex-grow: 1;
+        flex-basis: 200px;
+        border: solid #C9F227 2px;
+        border-radius: 5px;
+        padding: 10px;
+        margin: 10px;
+        font-size: 1.2rem;
+
+    }
+    
+    .quote h6 {
+        justify-content: flex-end;
+        align-self: flex-end;
+        font-size: 1rem;
+        padding: 5px;
+        margin: 0;
+    }
+    
+    /*guidelines------------------------------*/
+
+    .guidelines {
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: column;
+        align-items: center;
+        font-size: 1.2rem;
+
+    }
+
+    .guidelines-intro h2,
+    .guidelines-intro p {
+        padding: 10px;
+        margin: 0;
+        flex-grow: 1;
+    }
+
+    .guidelines h3 {
+        padding: 10px;
+        margin: 0;
+        flex-grow: 1;
+    }
+
+    .border {
+        flex-grow: 1;
+        border: solid 2px;
+        border-radius: 0.3em;
+        border-color: #C9F227;
+        padding: 10px;
+        margin: 0 10px 20px 10px;
+    }
+    
+    /*workout navigation --------------------*/
+
+    .workout-nav ul {
+        display: flex;
+        flex-direction: column;
+        align-content: center;
+        justify-content: space-between;
+        margin: 0;
+        padding: 0;
+    }
+    
+    .workout-nav li {
+        font-size: 1.2rem;
+        padding: 10px;
+        margin: auto;
+        list-style-type: none;
+    }
+    
+    .workout-nav a {
+        color: #DCC6E0;
+        text-decoration: none;
+    }
+
+    /*various workout points ------------------*/
+
+    .workout-points h3,
+    .workout-points h4 {
+        padding: 10px;
+        margin: 0;
+        flex-grow: 1;
+    }
+
+    .workout-points {
+        display: flex;
+        flex-direction: column;
+        margin-top: 50px;
+    }
+
+    /*articles ---------------------------------*/
+    .articles {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        border: solid 2px;
+        border-radius: 0.3em;
+        border-color: #C9F227;
+        padding: 10px 10px 0 10px;
+        margin: 0 10px 20px 10px;
+    }
+    
+    article {
+        display: flex;
+        flex-direction: column;
+        border-radius: 5px;
+        padding: 0;
+        margin: 0 0 20px 0;
+        font-size: 1.2rem;
+    }
+
+    article h5,
+    article p {
+        padding: 0;
+        margin: 5px 0;
+    }
+
+    article ul {
+        margin: 0;
+        padding: 0;
+        padding-left: 20px;
+    }
+
+    article li {
+        padding: 5px 0;
+    }
+    /*food & water -----------------------------*/
+
+    .food-water ul {
+        display: flex;
+        flex-direction: column;
+        border: solid 2px;
+        border-radius: 0.3em;
+        border-color: #C9F227;
+        padding: 10px 10px 10px 20px;
+        margin: 0 10px 20px 10px;
+    }
+
+    .food-water li {
+        margin: 10px;
+        padding: 0;
+        flex-grow: 1;
+    }
+    
+    /* ---Points-------------------*/
+    .enter-points {
+        display: flex;
+        flex-direction: column;
+        background: #5892cf;
+        background-image: linear-gradient(#1a659e, #5892cf 10%);
+        font-size: 1.2rem;
+    }
+    
+    fieldset {
+        border: solid 2px;
+        border-radius: 0.3em;
+        border-color: #C9F227;
+        margin: 10px;
+    }
+
+    fieldset a {
+        color: #DCC6E0;
+    }
+
+    .form {
+        margin: 20px auto;
+    }
+
+    .sleep ul,
+    .water ul,
+    .difficultyClass ul,
+    .difficultyGym ul,
+    .difficultyRun ul{
+        list-style-type: none;
+        margin: 5px auto;
+        padding: 0;
+    }
+
+    .difficultyClass ul,
+    .difficultyGym ul,
+    .difficultyRun ul {
+        padding-left: 20px;  
+    }
+
+    .difficultyClass li,
+    .difficultyGym li,
+    .difficultyRun li {
+        margin: 5px auto;
+    }
+
+    legend h3 {
+        margin-top: 0;
+    }
+
+    footer a {
+        color: #DCC6E0;
+    }
+    
+    input[type="checkbox"],
+    input[type="submit"] {
+        cursor: pointer;
+    }
+
+    input[type="checkbox"]:checked + label {
+    font-weight: bold;
+    }
+    
+    /* ---Footer--------------------- */
+    
+    footer {
+        background-color: #004e89;
+        height: auto;
+        width: 100%;
+        position: relative;
+        bottom: 0;
+        padding: 10px 0px;
+        text-align: center;
+    }
+    
+    .footer h6 {
+        color: #DCC6E0;
+        margin: 0;
+        padding: 0;
+        
+    }
+
+} /*--- Media 200 end bracket ---------------*/
+
+
+/*$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$*/
+/*--- Medium Screens ---------------*/
+/*$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$*/
+@media (min-width:600px) {
+
+/*--- Header ---------------*/
+    header {
+        margin:0;
+        padding: 0;
+        align-items: flex-end;
+        height: 102px;
+    }
+
+    .main-navigation {
+        display: flex;
+        flex-direction: column;
+        align-self: flex-start;
+        width: 90%;
+        margin: 0 auto;
+        }
+
+    .main-nav {
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: row;
+        align-items: flex-end;
+        justify-content: center;
+    }
+
+    .main-nav li {
+        font-size: 1.2rem;
+        padding: 2px;
+        margin: 0 auto;
+        flex-grow: 0;
+    }
+    
+    /* ---Greeting---------------------- */
+    
+    .greeting {
+        display: flex;
+        align-self: stretch;
+        align-items: center;
+        flex-direction: column;
+        justify-content: space-between;
+        height: 600px;
+    }
+    
+    .greeting h1 {
+        font-size: 5rem;
+    }
+    
+    .greeting h2 {
+        font-size: 2rem;
+    }
+
+    /* ----------contain------------*/
+
+    .contain {
+        display: flex;
+        flex-direction: column;
         width: 90%;
         margin: 0 auto;
     }
 
-    .greeting {
-        height: auto;
-        margin-top: 120px;
+    .workout-nav ul {
+        flex-direction: row;
+        justify-content: center;
     }
 
-    .greeting h1 {
-        width: 90%;
-        height: auto;
-    }
-    .greeting h2 {
-        width: 70%;
-        height: auto;
+    .workout-nav li {
+        margin: 0 10px;
     }
 
-    .about {
-        padding-top: 40px;
+    .form {
+        overflow: hidden;
+        margin: 40px auto;
     }
 
-    .about h2 {
-        margin-top: 0;
-    }
+
+} /*--- Media 600 end bracket ---------------*/
+
+
+/*$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$*/
+/*--- Large Screens ---------------*/
+/*$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$*/
+@media (min-width:900px) {
 
     .all-quotes {
-        width: 100%;
-        margin: 0;
-        padding: 0;
-        height: auto;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
     }
 
     .quote {
-        width: 45%;
-        margin: 12px;
+        flex-basis: 40%;
     }
 
-    header {
-        height: 110px;
-    }
-    .main-nav {
-        float: left;
-        position: relative;
-        top: 15px; 
+    .qThree {
+        order: -1;
     }
 
-    .workout-activ {
-        height: 1350px;
+    .qOne {
+        order: 2;
     }
-    article {
+
+    .workout-nav {
+        visibility: collapse;
+    }
+
+    .contain-col {
+        margin: 0;
+        padding: 0;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        align-items: baseline;
+    }
+
+    .col1,
+    .col2 {
+        flex-basis: 40%;
+        flex-grow: 1;
+    }
+
+    /* .contain-form {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+
+    .form {
+        flex-basis: 40%;
+        flex-grow: 1;
+    } */
+
+    .form {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: flex-start;
+    }
+
+    .form input,
+    .form label,
+    .form div {
+        margin: auto 5px;
+    }
+
+    .water,
+     {
+        display: flex;
+        flex-direction: column;
+    }
+
+
+}/*--- Media 900 end bracket ---------------*/
+
+
+
+/*$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$*/
+/*--- Extra Large Screens ---------------*/
+/*$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$*/
+@media (min-width:1200px) {
+    .contain {
+        display: flex;
+        flex-direction: column;
         width: 70%;
-    }
-}
-
-/* -----------------Small Screens------------------ */
-@media(max-width: 980px) {
-
-    body {
-        font-size: 16px;
+        margin: 0 auto;
     }
 
     header {
-        height: auto;
-        position: absolute;
-        top: 0;
-        padding-top: 20px;
-        padding-bottom: 20px;
+        height: 80px;
     }
 
-    .name {
-        font-size: 1.75em;
-        padding-bottom: 30px; 
+    .main-navigation {
+        display: flex;
+        flex-direction: row;
+        align-self: flex-start;
+        width: 90%;
+        margin: 0 auto;
+        padding-top: 10px;
+        align-items: baseline;
+        justify-content: space-between;
+        }
+
+    .main-nav {
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: row;
+        align-items: flex-end;
+        justify-content: flex-end;
     }
 
     .main-nav li {
-        float: left;
-    }
-
-    .container {
-        width: 90%;
+        font-size: 1.2rem;
+        padding: 2px;
+        margin: 0 10px;
+        flex-grow: 0;
     }
 
     .greeting {
-        height: auto;
+        height: 900px;
+    }
+
+    .greeting h1 {
+        font-size: 9rem;
+        margin: 200px auto;
+    }
+
+    .enter-points {
+        font-size: 1.5rem;
         margin-top: 100px;
     }
-    .greeting h1 {
-        width: 90%;
-        font-size: 60px;
-        height: auto;
-        margin-bottom: 20px;
-        margin-top: 130px;
-    }
-    .greeting h2 {
-        width: 70%;
-        height: auto;
-        border-radius: 10px;
-    }
-
-    .about {
-        height: auto;
-        padding: 40px 0 0 0;
-
-        margin: 0;
-    }
-    .about h2 {
-        margin-top: 0;
-    }
-
-    .quote {
-        width: auto ;
-        margin: 10px auto;
-    }
-
-    .workout-activ {
-        height: auto;
-    }
-    article {
-        float: none;
-    }
-
 }
