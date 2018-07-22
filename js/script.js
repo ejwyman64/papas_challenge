@@ -33,5 +33,5 @@ $('.greeting #surprise').click(function () {
 });
 
 $(document).ready(function () {
-    showGreeting(greeting, 700);
+    showGreeting(greeting, 3000);
 });
