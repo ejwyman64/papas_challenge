@@ -1,8 +1,10 @@
 # Papa's Challenge
 
-This website is my attempt to simplify a shared Google spreadsheet that was started by my husband's family to keep track of their fitness challenge. My ultimate hope is that I could have a website that calculates your points for you, all you have to input is what you accomplished that day. 
+This website is my attempt to simplify a shared Google spreadsheet that was started by my husband's family to keep track of their fitness challenge. My ultimate hope is that it could eventually show you your stats and compare your scores over time, and against other competitors. 
 
-While the form is not yet functional, you can click the submit button to activate an alert. There is also a surprise button that will reveal a new message when clicked.
+The form is functional! By that I mean if you fill it out it will tell you your total points earned for today's activities. Try it out :D
+
+One of my favorite features is a secret button on the page that shows a hidden message. I used jQuery to write this function just because I thought it would be fun. The rest of my JS is written in plain JS because I wanted to wrap my head around what is going on under the hood a little bit.
 
 My color theme is meant to be sporty and accessible, and it also includeds my husband's hometown colors, dark blue and orange.
 

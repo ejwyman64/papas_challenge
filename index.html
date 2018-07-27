@@ -25,7 +25,8 @@
                     <a href="#points">Enter Points</a>
                 </li>
 
-            <!--These links are commented out because the sections they reference are not active.-->
+                <!--These links are commented out because the sections they reference are not active.-->
+                <!--I hope to eventually make these a thing.-->
                 <!-- <li>
                     <a href="#progress">My Progress</a>
                 </li>
@@ -224,209 +225,210 @@
                         <legend>
                             <h3>Today's Points</h3>
                         </legend>
-                        <p>Please refer to the <a href="#guidelines">Guidlines</a> section for details on how the point system works.</p>
+                        <p>Please refer to the
+                            <a href="#guidelines">Guidlines</a> section for details on how the point system works.</p>
 
                         <!-- <div class="contain-form"> -->
-                            <label class="form get-name" for="name">Name:
-                                <input class="radcheckFields" type="text" id=user-name name="user-name" value="">
+                        <label class="form get-name" for="name">Name:
+                            <input class="radcheckFields" type="text" id=user-name name="user-name" value="">
+                        </label>
+
+                        <div class="form stretch" id="formStretch">
+                            <label for="stretchMinutes">How long did you stretch?</label>
+                            <select id="stretchMinutes" class="selectedValue">
+                                <option id="none4" value="0">NA</option>
+                                <option id="fifteenMin" value="5">15 minutes</option>
+                                <option id="thirtyMin" value="15">30 minutes</option>
+                            </select>
+                        </div>
+                        <!--end form-stretch-->
+
+                        <div class="form SPL" id="squatsPushupsLunges">
+                            <input class="basic" type="checkbox" id="squats" name="squats" value="true">
+                            <label for="squats">squats</label>
+
+
+                            <input class="basic" type="checkbox" id="pushups" name="pushups" value="true">
+                            <label for="pushups">push ups</label>
+
+                            <input class="basic" type="checkbox" id="lunges" name="lunges" value="true">
+                            <label for="lunges">lunges</label>
+
+                            <div id="basicReps" class="basic-reps">
+                                <label for="squatsPushupsLunges">How many reps did you do altogether?</label>
+                                <select class="selectedValue" name="squatsPushupsLunges">
+                                    <option id="none1" value="0">0</option>
+                                    <option id="fifty" value="5">50</option>
+                                    <option id="oneHundred1" value="10">100</option>
+                                    <option id="oneHundredFifty1" value="15">150</option>
+                                    <option id="twoHundred1" value="20">200</option>
+                                    <option id="twoHundredFifty1" value="25">250</option>
+                                    <option id="threeHundred1" value="30">300</option>
+                                </select>
+                            </div>
+                            <!--end basic-reps-->
+                        </div>
+                        <!--end form SPL-->
+
+                        <div class="form BPD">
+                            <input type="checkbox" id="burpees" name="burpees" value="true">
+                            <label for="burpees">burpees</label>
+
+                            <input type="checkbox" id="pullups" name="pullups" value="true">
+                            <label for="pullups">pullups</label>
+
+                            <input type="checkbox" id="dips" name="dips" value="true">
+                            <label for="dips">dips</label>
+                            <div id="formBPD" class="repsBPD">
+                                <label for="BPDreps">How many reps did you do altogether?</label>
+                                <select class="selectedValue" name="BPDreps">
+                                    <option id="none2" value="0">0</option>
+                                    <option id="fifty2" value="5">50</option>
+                                    <option id="oneHundred2" value="10">100</option>
+                                    <option id="oneHundredFifty2" value="15">150</option>
+                                    <option id="twoHundred2" value="20">200</option>
+                                    <option id="twoHundredFifty2" value="25">250</option>
+                                    <option id="threeHundred2" value="30">300</option>
+                                </select>
+                            </div>
+                            <!--end basic-reps-->
+                        </div>
+                        <!--end formBPD-->
+
+                        <div class="form jjacks">
+                            <label for="jjacks">How many jumping jacks did you do?</label>
+                            <select class="selectedValue" name="jjacks">
+                                <option id="none3" value="0">0</option>
+                                <option id="oneHundred3" value="5">100</option>
+                                <option id="twoHundred3" value="10">200</option>
+                                <option id="threeHundred3" value="15">300</option>
+                                <option id="fourHundred3" value="20">400</option>
+                                <option id="fiveHundred3" value="25">500</option>
+                            </select>
+                        </div>
+                        <!--end form-jjacks-->
+
+                        <div class="form plank">
+                            <input class="radcheckFields" type="checkbox" id="plank" name="plank" value="5">
+                            <label for="plank">2.5 minute plank</label>
+                        </div>
+                        <!--end form-plank-->
+
+                        <div class="form core">
+                            <input type="checkbox" class="radcheckFields" id="core" name="core" value="10">
+                            <label for="core">core workout</label>
+                            <input type="checkbox" class="radcheckFields" id="hips" name="hips" value="10">
+                            <label for="hip">hip workout</label>
+                        </div>
+                        <!--end form-core-->
+                        <div class="form class">
+                            <label for="difficultyClass">Workout class difficulty: </label>
+                            <select class="selectedValue" name="difficultyClass">
+                                <option id="none4" value="0">NA</option>
+                                <option id="casual1" value="5">casual movement</option>
+                                <option id="moderate1" value="10">moderate</option>
+                                <option id="medium1" value="15">medium</option>
+                                <option id="hard1" value="25">medium to hard</option>
+                                <option id="intense1" value="35">hard to intense</option>
+                            </select>
+                        </div>
+                        <!--end form class-->
+
+                        <div class="form gym">
+                            <label for="difficultyGym">Gym session difficulty: </label>
+                            <select class="selectedValue" name="difficultyGym">
+                                <option id="none5" value="0">NA</option>
+                                <option id="casual2" value="5">casual movement</option>
+                                <option id="moderate2" value="10">moderate</option>
+                                <option id="medium2" value="15">medium</option>
+                                <option id="hard2" value="25">medium to hard</option>
+                                <option id="intense2" value="35">hard to intense</option>
+                            </select>
+                        </div>
+                        <!--end form gym-->
+
+                        <div class="form run">
+                            <label for="difficultyRun">Run/walk difficulty: </label>
+                            <select class="selectedValue" name="difficultyRun">
+                                <option id="none6" value="0">NA</option>
+                                <option id="casual3" value="5">casual movement</option>
+                                <option id="moderate3" value="10">moderate</option>
+                                <option id="medium3" value="15">medium</option>
+                                <option id="hard3" value="25">medium to hard</option>
+                                <option id="intense3" value="35">hard to intense</option>
+                            </select>
+                        </div>
+                        <!--end form run-->
+
+                        <div id="steps" class="form steps">
+                            <label for="stepsCount">Steps Taken</label>
+                            <select class="selectedValue" id="stepCount">
+                                <option id="lessThan4" value="0">Less than 10,000</option>
+                                <option id="tenThousand4" value="10">10,000</option>
+                                <option id="fifteenThousand4" value="15">15,000</option>
+                                <option id="twentyThousand4" value="20">20,000</option>
+                                <option id="twentyFiveThousand4" value="25">25,000</option>
+                            </select>
+                        </div>
+                        <!--end form steps-->
+
+                        <div id="water" class="form water">
+                            <label for="water">Did you meet your water goal?</label>
+                            <ul>
+                                <li>
+                                    <input type="radio" class="radcheckFields" id="yes" name="water" value="10">
+                                    <label for="yes">Yes</label>
+                                </li>
+                                <li>
+                                    <input type="radio" class="radcheckFields" id="no" name="water" value="0">
+                                    <label for="no">No</label>
+                                </li>
+                            </ul>
+                        </div>
+                        <!--end form water-->
+
+                        <div class="form">
+                            <label class="fruit" for="fruit">How many servings of fruit did you have?
+                                <select class="selectedValue" id="fruit">
+                                    <option id="noFruit" value="0">none</option>
+                                    <option id="1ServingFruit" value="2">1</option>
+                                    <option id="2ServingFruit" value="4">2</option>
+                                    <option id="3ServingFruit" value="6">3</option>
+                                    <option id="4ServingFruit" value="8">4</option>
+                                    <option id="5ServingFruit" value="10">5</option>
+                                    <option id="6ServingFruit" value="12">6</option>
+                                </select>
                             </label>
+                        </div>
 
-                            <div class="form stretch" id="formStretch">
-                                    <label for="stretchMinutes">How long did you stretch?</label>
-                                    <select id="stretchMinutes" class="selectedValue">
-                                        <option id="none4" value="0">NA</option>
-                                        <option id="fifteenMin" value="5">15 minutes</option>
-                                        <option id="thirtyMin" value="15">30 minutes</option>
-                                    </select>
-                            </div>
-                            <!--end form-stretch-->
-
-                            <div class="form SPL" id="squatsPushupsLunges">
-                                <input class="basic" type="checkbox" id="squats" name="squats" value="true">
-                                <label for="squats">squats</label>
-
-
-                                <input class="basic" type="checkbox" id="pushups" name="pushups" value="true">
-                                <label for="pushups">push ups</label>
-
-                                <input class="basic" type="checkbox" id="lunges" name="lunges" value="true">
-                                <label for="lunges">lunges</label>
-
-                                <div id="basicReps" class="basic-reps">
-                                    <label for="squatsPushupsLunges">How many reps did you do altogether?</label>
-                                    <select class="selectedValue" name="squatsPushupsLunges">
-                                        <option id="none1" value="0">0</option>
-                                        <option id="fifty" value="5">50</option>
-                                        <option id="oneHundred1" value="10">100</option>
-                                        <option id="oneHundredFifty1" value="15">150</option>
-                                        <option id="twoHundred1" value="20">200</option>
-                                        <option id="twoHundredFifty1" value="25">250</option>
-                                        <option id="threeHundred1" value="30">300</option>
-                                    </select>
-                                </div>
-                                <!--end basic-reps-->
-                            </div>
-                            <!--end form SPL-->
-
-                            <div class="form BPD">
-                                <input type="checkbox" id="burpees" name="burpees" value="true">
-                                <label for="burpees">burpees</label>
-
-                                <input type="checkbox" id="pullups" name="pullups" value="true">
-                                <label for="pullups">pullups</label>
-
-                                <input type="checkbox" id="dips" name="dips" value="true">
-                                <label for="dips">dips</label>
-                                <div id="formBPD" class="repsBPD">
-                                    <label for="BPDreps">How many reps did you do altogether?</label>
-                                    <select class="selectedValue" name="BPDreps">
-                                        <option id="none2" value="0">0</option>
-                                        <option id="fifty2" value="5">50</option>
-                                        <option id="oneHundred2" value="10">100</option>
-                                        <option id="oneHundredFifty2" value="15">150</option>
-                                        <option id="twoHundred2" value="20">200</option>
-                                        <option id="twoHundredFifty2" value="25">250</option>
-                                        <option id="threeHundred2" value="30">300</option>
-                                    </select>
-                                </div>
-                                <!--end basic-reps-->
-                            </div>
-                            <!--end formBPD-->
-
-                            <div class="form jjacks">
-                                <label for="jjacks">How many jumping jacks did you do?</label>
-                                <select class="selectedValue" name="jjacks">
-                                    <option id="none3" value="0">0</option>
-                                    <option id="oneHundred3" value="5">100</option>
-                                    <option id="twoHundred3" value="10">200</option>
-                                    <option id="threeHundred3" value="15">300</option>
-                                    <option id="fourHundred3" value="20">400</option>
-                                    <option id="fiveHundred3" value="25">500</option>
+                        <div class="form">
+                            <label class="veggies" for="veggies">How many servings of vegetables did you have?
+                                <select class="selectedValue" id="veggies">
+                                    <option id="noFruit" value="0">none</option>
+                                    <option id="1ServingVeg" value="2">1</option>
+                                    <option id="2ServingVeg" value="4">2</option>
+                                    <option id="3ServingVeg" value="6">3</option>
+                                    <option id="4ServingVeg" value="8">4</option>
+                                    <option id="5ServingVeg" value="10">5</option>
+                                    <option id="6ServingVeg" value="12">6</option>
                                 </select>
-                            </div>
-                            <!--end form-jjacks-->
+                            </label>
+                        </div>
 
-                            <div class="form plank">
-                                <input class="radcheckFields" type="checkbox" id="plank" name="plank" value="5">
-                                <label for="plank">2.5 minute plank</label>
-                            </div>
-                            <!--end form-plank-->
-
-                            <div class="form core">
-                                <input type="checkbox" class="radcheckFields" id="core" name="core" value="10">
-                                <label for="core">core workout</label>
-                                <input type="checkbox" class="radcheckFields" id="hips" name="hips" value="10">
-                                <label for="hip">hip workout</label>
-                            </div>
-                            <!--end form-core-->
-                            <div class="form class">
-                                    <label for="difficultyClass">Workout class difficulty: </label>
-                                    <select class="selectedValue" name="difficultyClass">
-                                        <option id="none4" value="0">NA</option>
-                                        <option id="casual1" value="5">casual movement</option>
-                                        <option id="moderate1" value="10">moderate</option>
-                                        <option id="medium1" value="15">medium</option>
-                                        <option id="hard1" value="25">medium to hard</option>
-                                        <option id="intense1" value="35">hard to intense</option>
-                                    </select>
-                            </div>
-                            <!--end form class-->
-
-                            <div class="form gym">
-                                    <label for="difficultyGym">Gym session difficulty: </label>
-                                    <select class="selectedValue" name="difficultyGym">
-                                        <option id="none5" value="0">NA</option>
-                                        <option id="casual2" value="5">casual movement</option>
-                                        <option id="moderate2" value="10">moderate</option>
-                                        <option id="medium2" value="15">medium</option>
-                                        <option id="hard2" value="25">medium to hard</option>
-                                        <option id="intense2" value="35">hard to intense</option>
-                                    </select>
-                            </div>
-                            <!--end form gym-->
-
-                            <div class="form run">
-                                    <label for="difficultyRun">Run/walk difficulty: </label>
-                                    <select class="selectedValue" name="difficultyRun">
-                                        <option id="none6" value="0">NA</option>
-                                        <option id="casual3" value="5">casual movement</option>
-                                        <option id="moderate3" value="10">moderate</option>
-                                        <option id="medium3" value="15">medium</option>
-                                        <option id="hard3" value="25">medium to hard</option>
-                                        <option id="intense3" value="35">hard to intense</option>
-                                    </select>
-                            </div>
-                            <!--end form run-->
-
-                            <div id="steps" class="form steps">
-                                <label for="stepsCount">Steps Taken</label>
-                                <select class="selectedValue" id="stepCount">
-                                    <option id="lessThan4" value="0">Less than 10,000</option>
-                                    <option id="tenThousand4" value="10">10,000</option>
-                                    <option id="fifteenThousand4" value="15">15,000</option>
-                                    <option id="twentyThousand4" value="20">20,000</option>
-                                    <option id="twentyFiveThousand4" value="25">25,000</option>
-                                </select>
-                            </div>
-                            <!--end form steps-->
-
-                            <div id="water" class="form water">
-                                <label for="water">Did you meet your water goal?</label>
-                                <ul>
-                                    <li>
-                                        <input type="radio" class="radcheckFields" id="yes" name="water" value="10">
-                                        <label for="yes">Yes</label>
-                                    </li>
-                                    <li>
-                                        <input type="radio" class="radcheckFields" id="no" name="water" value="0">
-                                        <label for="no">No</label>
-                                    </li>
-                                </ul>
-                            </div>
-                            <!--end form water-->
-
-                            <div class="form">
-                                <label class="fruit" for="fruit">How many servings of fruit did you have?
-                                    <select class="selectedValue" id="fruit">
-                                        <option id="noFruit" value="0">none</option>
-                                        <option id="1ServingFruit" value="2">1</option>
-                                        <option id="2ServingFruit" value="4">2</option>
-                                        <option id="3ServingFruit" value="6">3</option>
-                                        <option id="4ServingFruit" value="8">4</option>
-                                        <option id="5ServingFruit" value="10">5</option>
-                                        <option id="6ServingFruit" value="12">6</option>
-                                    </select>
-                                </label>
-                            </div>
-
-                            <div class="form">
-                                <label class="veggies" for="veggies">How many servings of vegetables did you have?
-                                    <select class="selectedValue" id="veggies">
-                                            <option id="noFruit" value="0">none</option>
-                                            <option id="1ServingVeg" value="2">1</option>
-                                            <option id="2ServingVeg" value="4">2</option>
-                                            <option id="3ServingVeg" value="6">3</option>
-                                            <option id="4ServingVeg" value="8">4</option>
-                                            <option id="5ServingVeg" value="10">5</option>
-                                            <option id="6ServingVeg" value="12">6</option>
-                                        </select>
-                                </label>
-                            </div>
-
-                            <div id="sleep" class="form sleep">
-                                <label for="sleep">Sleep Time</label>
-                                <ul>
-                                    <li>
-                                        <input type="radio" class="radioschecksValue" id="lessSleep" name="sleep" value="0">
-                                        <label for="lessSleep">less than 7 hours</label>
-                                    </li>
-                                    <li>
-                                        <input type="radio" class="radioschecksValue" id="moreSleep" name="sleep" value="10">
-                                        <label for="moreSleep">7 hours or more</label>
-                                    </li>
-                                </ul>
-                            </div>
-                            <!--end form sleep-->
+                        <div id="sleep" class="form sleep">
+                            <label for="sleep">Sleep Time</label>
+                            <ul>
+                                <li>
+                                    <input type="radio" class="radioschecksValue" id="lessSleep" name="sleep" value="0">
+                                    <label for="lessSleep">less than 7 hours</label>
+                                </li>
+                                <li>
+                                    <input type="radio" class="radioschecksValue" id="moreSleep" name="sleep" value="10">
+                                    <label for="moreSleep">7 hours or more</label>
+                                </li>
+                            </ul>
+                        </div>
+                        <!--end form sleep-->
                         <!-- </div> -->
                         <!--end contain-form-->
 
@@ -450,7 +452,8 @@
     </main>
     <footer>
         <div class="footer">
-            <h6><a href="https://github.com/ejwyman64" target="_blank">Emma Wyman</a> | 2018</h6>
+            <h6>
+                <a href="https://github.com/ejwyman64" target="_blank">Emma Wyman</a> | 2018</h6>
         </div>
     </footer>
     <script src="js/jquery-3.3.1.min.js"></script>
