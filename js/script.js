@@ -1,30 +1,56 @@
 
-//Submit alert
-const submitForm = document.querySelector('#submit');
+//Get number values for points. 
+
+function getValues () {
+    var selectFields = document.getElementsByClassName('selectedValue');
+    var radcheckFields = document.getElementsByClassName('radioschecksValue');
+    var values=[];    
+    var totalPoints=0;
+    var result=[];
+    
+    
+    for(var i = 0; i < selectFields.length; i++) {
+      
+        var select = selectFields[i];
+        values.push(select.options[select.selectedIndex].value);
+       // values.push(formValues[i].getAttribute("value"));
+      
+    }
+    for(var i = 0; i < radcheckFields.length; i++) {
+        
+        if(radcheckFields[i].checked){
+        values.push(radcheckFields[i].getAttribute("value"));
+        }
+    }
+
+    for (var i=0; i < values.length; i++) {
+        result.push(+values[i])
+    }
+
+    for (var i = 0; i < result.length; i++) {
+        totalPoints += result[i]
+    }
+    
+    console.log(values);
+    console.log(result);
+    console.log(totalPoints);
+    //alert with username and thank you.
+    var userName = document.getElementById('user-name').value;
+    alert("Thank you " + userName + " for submitting today's points! Your total points is: " + totalPoints);
+
+}
+
+//Submit button function
+// submitForm.addEventListener('click', () => { 
+
+//     //alert with username and thank you.
+//     var userName = document.getElementById('user-name').value;
+//     alert("Thank you " + userName + " for submitting today's points! Your total points today is: " + totalPoints);
+
+// })
 
 //Fade in large text
 const greeting = document.getElementById('large-text');
-
-var totalPoints = [0];
-
-var formInput = [document.querySelectorAll('.form')];
-console.log(formInput);
-
-//Submit button function
-submitForm.addEventListener('click', () => { 
-
-
-    //testing value selection
-    var timeStretch = document.getElementById("stretchMinutes");
-    var stretchPoints = timeStretch.options[timeStretch.selectedIndex].value;
-    totalPoints =+ stretchPoints;
-    
-
-    //alert with username and thank you.
-    var userName = document.getElementById('user-name').value;
-    alert("Thank you " + userName + " for submitting today's points! Your total points today is: " + totalPoints);
-
-})
 
 function showGreeting (ele, waitTime) {
     $(ele).fadeIn(waitTime);
